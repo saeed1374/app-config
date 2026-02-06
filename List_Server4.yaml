@@ -1,0 +1,6484 @@
+port: 7890
+socks-port: 7891
+allow-lan: false
+mode: "Rule"
+log-level: "info"
+external-controller: "127.0.0.1:9090"
+dns:
+  enable: true
+  listen: "0.0.0.0:53"
+  default-nameserver:
+    - "223.5.5.5"
+    - "114.114.114.114"
+  enhanced-mode: "fake-ip"
+  fake-ip-range: "198.18.0.1/16"
+  nameserver:
+    - "https://doh.pub/dns-query"
+    - "https://dns.alidns.com/dns-query"
+proxies:
+  - name: "flyv2ray"
+    type: "ss"
+    server: "82.38.31.61"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+  - name: "Blank_Vpn_لطفا_برای_حمایت_جوین_شید"
+    type: "ss"
+    server: "37.202.245.205"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "dd57b1dbcf2ecb33fb073291a8fb6aa8"
+  - name: "Blank_Vpn_لطفا_برای_حمایت_جوین_شید_1"
+    type: "ss"
+    server: "62.133.63.21"
+    port: 65262
+    cipher: "chacha20-ietf-poly1305"
+    password: "K7ddIM4QwYF8tQL3HCwFGL"
+  - name: "_TmeV2HUBIR_Join_Now_"
+    type: "ss"
+    server: "82.38.31.176"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "k1dBOmOB4oqi7Ump37a1bQ"
+  - name: "telegram_config7land"
+    type: "ss"
+    server: "82.38.31.101"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+  - name: "httpstmekanfek_v2"
+    type: "ss"
+    server: "82.38.31.61"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+  - name: "httpstmekanfek_v2_1"
+    type: "ss"
+    server: "82.38.31.61"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+  - name: "JoinConfigV2rayy_کانفیگ_رایگان"
+    type: "ss"
+    server: "54.36.174.134"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "pvgz9pq"
+  - name: "teldrgateway"
+    type: "ss"
+    server: "82.38.31.61"
+    port: 8080
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+  - name: "rendvpn"
+    type: "ss"
+    server: "141.95.106.127"
+    port: 11201
+    cipher: "chacha20-ietf-poly1305"
+    password: "94aae0510188e8c5"
+  - name: "rendvpn_1"
+    type: "ss"
+    server: "62.133.63.169"
+    port: 37096
+    cipher: "chacha20-ietf-poly1305"
+    password: "Ul0rGyAAed5HRDpvFqr2C0"
+  - name: "rendvpn_2"
+    type: "ss"
+    server: "141.95.106.127"
+    port: 11201
+    cipher: "chacha20-ietf-poly1305"
+    password: "94aae0510188e8c5"
+  - name: "rendvpn_3"
+    type: "ss"
+    server: "62.133.63.169"
+    port: 37096
+    cipher: "chacha20-ietf-poly1305"
+    password: "Ul0rGyAAed5HRDpvFqr2C0"
+  - name: "JoinConfigV2rayy_کانفیگ_رایگان_1"
+    type: "ss"
+    server: "54.36.174.134"
+    port: 443
+    cipher: "chacha20-ietf-poly1305"
+    password: "pvgz9pq"
+  - name: "flyv2ray_1"
+    type: "vless"
+    server: "cfcdn.zopli.ir"
+    port: 443
+    uuid: "98d677be-b14b-4c14-a96b-4a39a3be645a"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/eyJqdW5rIjoiZHJmTGlJSmciLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560"
+      headers: {"Host":"t86y6leiyaph7tsvb170x7vfx0-3dvh3.vrezht08.workers.dev"}
+    servername: "t86y6leiyaph7tsvb170x7vfx0-3dvh3.vrezht08.workers.dev"
+    alpn:
+      - "http/1.1"
+  - name: "Telegram_GOLDllVPN_"
+    type: "vless"
+    server: "66.81.247.155"
+    port: 443
+    uuid: "4525c260-df3c-4f62-b8f1-f4f5f305694b"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"yyzsuabw9e3qd5ud7ihi5dxm96oglnsvr83cjojnm1efncfhr9ucordq.zjde5.de5.net"}
+    servername: "yyzsuabw9e3qd5ud7ihi5dxm96oglnsvr83cjojnm1efncfhr9ucordq.zjde5.de5.net"
+  - name: "Telegram_GOLDllVPN__1"
+    type: "vless"
+    server: "104.18.32.47"
+    port: 80
+    uuid: "c5fbb5dd-83bb-43ce-a799-e3e5c29e25da"
+    network: "ws"
+    tls: false
+    skip-cert-verify: true
+    ws-opts:
+      path: "/?ed"
+      headers: {"Host":"gLeEfuL-GrassMcKS7Sr4kw.wiNdleR.co.Uk."}
+  - name: "Telegram_GOLDllVPN__2"
+    type: "vless"
+    server: "104.17.166.123"
+    port: 8443
+    uuid: "829658bf-03c4-4c28-81e9-dd6ea141b2d0"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/?ed=2560"
+      headers: {"Host":"5jq7fvwpqt5owo2fi198sa6qoxznkzfea7en4m3xroeqrt3u3q.zjde5.de5.net"}
+    servername: "5jq7fvwpqt5owo2fi198sa6qoxznkzfea7en4m3xroeqrt3u3q.zjde5.de5.net"
+    alpn:
+      - "http/1.1"
+  - name: "Telegram_GOLDllVPN__3"
+    type: "vless"
+    server: "89.169.162.214"
+    port: 8443
+    uuid: "2ad6bd90-51fd-41d2-985b-b7aab5cd77c8"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04"
+      short-id: "205748bc0f24a747"
+    servername: "yandex.ru"
+  - name: "Telegram_GOLDllVPN__4"
+    type: "vless"
+    server: "172.64.152.23"
+    port: 443
+    uuid: "396c904b-4b62-4334-b793-ee25fc0c61cc"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/eyJqdW5rIjoiTHczMWlhREZIb0ljUDhoaCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560"
+      headers: {"Host":"8vmU06cxdz59m931xnREgj8qpnoq1-06.pages.dev"}
+    servername: "pages.dev"
+  - name: "Telegram_GOLDllVPN__5"
+    type: "vless"
+    server: "172.64.149.99"
+    port: 8443
+    uuid: "2ddeb056-17d4-421e-a318-39428733d4a2"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/?ed=2560"
+      headers: {"Host":"8p3cfl0ripm.zjde5.de5.net"}
+    servername: "8p3cfl0ripm.zjde5.de5.net"
+    alpn:
+      - "http/1.1"
+  - name: "Telegram_GOLDllVPN__6"
+    type: "vless"
+    server: "104.17.162.123"
+    port: 8443
+    uuid: "83f03646-fb28-44cc-9d2c-8853f6c09285"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/?ed=#ABASBIJAN?ed=512"
+      headers: {"Host":"r4fnviw9jl4i4rx.zjde5.de5.net"}
+    servername: "r4fnviw9jl4i4rx.zjde5.de5.net"
+    alpn:
+      - "http/1.1"
+  - name: "Telegram_GOLDllVPN__7"
+    type: "vless"
+    server: "87.239.106.153"
+    port: 8443
+    uuid: "1e4649f5-f5d6-4896-9be0-4c6725d4106e"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg"
+      short-id: "48fccabc158a4c22"
+    servername: "m.vk.ru"
+  - name: "Telegram_GOLDllVPN__8"
+    type: "vless"
+    server: "104.17.162.123"
+    port: 8443
+    uuid: "83f03646-fb28-44cc-9d2c-8853f6c09285"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/?ed=2560"
+      headers: {"Host":"r4fnviw9jl4i4rx.zjde5.de5.net"}
+    servername: "r4fnviw9jl4i4rx.zjde5.de5.net"
+    alpn:
+      - "http/1.1"
+  - name: "Telegram_GOLDllVPN__9"
+    type: "vless"
+    server: "84.23.52.70"
+    port: 443
+    uuid: "27a5fc60-29b7-4598-9cdd-b8180a01b441"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg"
+      short-id: "8ba12e75110b7a9c"
+    servername: "m.vk.ru"
+  - name: "Telegram_GOLDllVPN__10"
+    type: "vless"
+    server: "104.17.165.123"
+    port: 8443
+    uuid: "f85f60b1-2b96-49e9-8bde-b656d1516df0"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/?ed=2560"
+      headers: {"Host":"gx8rw8fz783ncefn332y7uyfsvb59o820mryrxu1cj19jiuuur.zjde5.de5.net"}
+    servername: "gx8rw8fz783ncefn332y7uyfsvb59o820mryrxu1cj19jiuuur.zjde5.de5.net"
+    alpn:
+      - "http/1.1"
+  - name: "Telegram_GOLDllVPN__11"
+    type: "vless"
+    server: "152.53.182.235"
+    port: 443
+    uuid: "f88c83ad-c1ea-464a-bc8d-4b3f5bf48d14"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "ckRcueERkPqqjZABwxqni_J_Nbb70Q6k5fEEUAjoImw"
+    servername: "live.com"
+  - name: "Telegram_GOLDllVPN__12"
+    type: "vless"
+    server: "45.144.48.54"
+    port: 443
+    uuid: "666250e3-362e-440a-b9e3-2b7794c02af8"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "I4lUR4e9kgCZUY_yd2vY_nOcLw0B-e-CNOQxgBgAJn8"
+      short-id: "0f4dacf88252e05f"
+    servername: "pl.asbndx.com"
+  - name: "Telegram_GOLDllVPN__13"
+    type: "vless"
+    server: "77.239.124.88"
+    port: 443
+    uuid: "ce7f5e28-d72d-4006-8d70-f428a4721910"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "3zn513ilYXOJngXLRP0MUnK23HuB9TKLjQ7YG20dzTQ"
+    servername: "mskhost.outlinekeys.net"
+  - name: "Telegram_GOLDllVPN__14"
+    type: "vless"
+    server: "57.129.49.1"
+    port: 23576
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
+    servername: "fuck.rkn"
+  - name: "Telegram_GOLDllVPN__15"
+    type: "vless"
+    server: "152.53.182.235"
+    port: 443
+    uuid: "f88c83ad-c1ea-464a-bc8d-4b3f5bf48d14"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "ckRcueERkPqqjZABwxqni_J_Nbb70Q6k5fEEUAjoImw"
+    servername: "live.com"
+  - name: "Telegram_GOLDllVPN__16"
+    type: "vless"
+    server: "31.13.208.3"
+    port: 443
+    uuid: "f3f6f19f-c68a-462c-a534-9b388663fffa"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "O2ttHpVFmwoAf-E1rHgOlv7NggcwxcWkHHen7jkIBjY"
+      short-id: "3396f304f579d51f"
+    servername: "fl.mcqueenconnection.ru"
+  - name: "Telegram_GOLDllVPN__17"
+    type: "vless"
+    server: "91.84.102.30"
+    port: 443
+    uuid: "a44e0875-210f-4941-9062-89b6361a14c6"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "i5a8i2AWUSMZ-rYA6hGBRCBBoe7W5ah33SCdF5JkMk4"
+      short-id: "8bcfe256cf216fd8"
+    servername: "apple.com"
+  - name: "Telegram_GOLDllVPN__18"
+    type: "vless"
+    server: "185.92.181.145"
+    port: 443
+    uuid: "666250e3-362e-440a-b9e3-2b7794c02af8"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "jA_Xd8qfMloJg0lbdxPnEcDJc3MltgueXpxYQAWnlD0"
+      short-id: "0f4dacf66101e05f"
+    servername: "us.asbndx.com"
+  - name: "Telegram_GOLDllVPN__19"
+    type: "vless"
+    server: "147.45.246.124"
+    port: 443
+    uuid: "1335908d-f1de-4b9c-84f8-4dd76d7290ef"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "_MxtsIvR5Zwwoh170LSFE6_4GZ8y1goMthM3UYAngiA"
+      short-id: "1735afad"
+    servername: "s3.firstvds.ru"
+  - name: "Telegram_GOLDllVPN__20"
+    type: "vless"
+    server: "78.159.122.223"
+    port: 443
+    uuid: "666250e3-362e-440a-b9e3-2b7794c02af8"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "NLARt-womsWqopLrSLNpfp3bHXy3Pg08_LbFUQPhpjU"
+      short-id: "0f4dacf82203e11f"
+    servername: "de-two.asbndx.com"
+  - name: "Telegram_GOLDllVPN__21"
+    type: "vless"
+    server: "188.114.97.2"
+    port: 2087
+    uuid: "eda7584e-196f-4190-8be9-844940e7540a"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"188.114.97.2"}
+    servername: "makfornt.get-service.ir"
+    alpn:
+      - "h2"
+      - "http/1.1"
+  - name: "Telegram_GOLDllVPN__22"
+    type: "vless"
+    server: "pl.dznn.net"
+    port: 443
+    uuid: "267e5284-8c31-42ed-9807-2182a88ca78b"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "9F7JxyyP-TNLt0dY2xOB0_34I8W0xXIpFY7rZ7-L0Gg"
+      short-id: "19aa22f681923dc8"
+    servername: "api.mindbox.ru"
+  - name: "Telegram_GOLDllVPN__23"
+    type: "vless"
+    server: "45.92.219.50"
+    port: 443
+    uuid: "267e5284-8c31-42ed-9807-2182a88ca78b"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "9F7JxyyP-TNLt0dY2xOB0_34I8W0xXIpFY7rZ7-L0Gg"
+      short-id: "19aa22f681923dc8"
+    servername: "ozon.ru"
+  - name: "Telegram_GOLDllVPN__24"
+    type: "vless"
+    server: "194.87.221.125"
+    port: 443
+    uuid: "90c9c25c-df6c-4438-83d3-ef97166a9184"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "yP1V_oAX1Sehc_102nMHuQgTOYk7T9KbJQmTlK4maVE"
+      short-id: "67b44a5918dcd53a"
+    servername: "sun6-22.userapi.com"
+  - name: "Telegram_GOLDllVPN__25"
+    type: "vless"
+    server: "ru-cdn-cloud-2.ultima.foundation"
+    port: 443
+    uuid: "2dfa740c-8069-4993-8b96-c3e5dc540593"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "FcZ6-LZS5HHqAJ8YwFV_Gu_WxrMuylqxYjBu-1CLVRI"
+      short-id: "a9725715bf4c62ff"
+    servername: "sun6-21.userapi.com"
+  - name: "Telegram_GOLDllVPN__26"
+    type: "vless"
+    server: "159.246.55.253"
+    port: 2096
+    uuid: "f61a4285-7264-4d07-9408-7b9ba1922c26"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"gaosir.unfeeling.sbs"}
+    servername: "gaosir.unfeeling.sbs"
+    alpn:
+      - "h2"
+  - name: "Telegram_GOLDllVPN__27"
+    type: "vless"
+    server: "91.206.71.253"
+    port: 2096
+    uuid: "2456f90c-5183-476d-b069-16ae74ce120f"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/Telegram_@sinavm/?ed=2560"
+      headers: {"Host":"fast01.0860852.xyz"}
+    servername: "fast01.0860852.xyz"
+  - name: "Telegram_GOLDllVPN__28"
+    type: "vless"
+    server: "65.109.189.89"
+    port: 33801
+    uuid: "7bcfdcf8-fe22-4d40-8707-3249aeb66a5f"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "Telegram_GOLDllVPN__29"
+    type: "vless"
+    server: "91.107.255.113"
+    port: 8880
+    uuid: "c9cdb778-7bd5-497d-84a1-0d25ed75869e"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "Telegram_GOLDllVPN__30"
+    type: "vless"
+    server: "norman.ns.cloudflare.com"
+    port: 443
+    uuid: "53f0bca8-f170-4ef7-8031-c7d441189dbf"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/cahttingws"
+      headers: {"Host":"639001966536690941.prius-amsiq.info"}
+    servername: "639001966536690941.prius-amsiq.info"
+  - name: "Telegram_GOLDllVPN__31"
+    type: "vless"
+    server: "delilah.ns.cloudflare.com"
+    port: 443
+    uuid: "5b687f17-0176-495e-84a1-0835f8feec91"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/egakxows"
+      headers: {"Host":"639002592262919469.sentra-amsir.info"}
+    servername: "639002592262919469.sentra-amsir.info"
+  - name: "Telegram_GOLDllVPN__32"
+    type: "vless"
+    server: "194.87.221.125"
+    port: 443
+    uuid: "90c9c25c-df6c-4438-83d3-ef97166a9184"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "yP1V_oAX1Sehc_102nMHuQgTOYk7T9KbJQmTlK4maVE"
+      short-id: "67b44a5918dcd53a"
+    servername: "sun6-22.userapi.com"
+  - name: "Telegram_GOLDllVPN__33"
+    type: "vless"
+    server: "159.246.55.253"
+    port: 2096
+    uuid: "f61a4285-7264-4d07-9408-7b9ba1922c26"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"gaosir.unfeeling.sbs"}
+    servername: "gaosir.unfeeling.sbs"
+    alpn:
+      - "h2"
+  - name: "Telegram_GOLDllVPN__34"
+    type: "vless"
+    server: "91.206.71.253"
+    port: 2096
+    uuid: "2456f90c-5183-476d-b069-16ae74ce120f"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/Telegram_@sinavm/?ed=2560"
+      headers: {"Host":"fast01.0860852.xyz"}
+    servername: "fast01.0860852.xyz"
+  - name: "Telegram_GOLDllVPN__35"
+    type: "vless"
+    server: "88.218.94.97"
+    port: 8443
+    uuid: "62b0e46b-d2a5-423d-8457-95bde707fc19"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+    servername: "cdn.discordapp.com"
+  - name: "Telegram_GOLDllVPN__36"
+    type: "vless"
+    server: "88.218.94.97"
+    port: 8443
+    uuid: "62b0e46b-d2a5-423d-8457-95bde707fc19"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+    servername: "cdn.discordapp.com"
+  - name: "Telegram_GOLDllVPN__37"
+    type: "vless"
+    server: "172.64.32.220"
+    port: 443
+    uuid: "f028a8c0-6763-4558-aee3-2563db9d7825"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/xxvclws"
+      headers: {"Host":"freudd.info"}
+    servername: "freudd.info"
+  - name: "Telegram_GOLDllVPN__38"
+    type: "vless"
+    server: "108.162.195.45"
+    port: 443
+    uuid: "7270612b-49f6-4b04-999c-34d8263da767"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/aymdlws"
+      headers: {"Host":"picassoo.info"}
+    servername: "picassoo.info"
+  - name: "Telegram_GOLDllVPN__39"
+    type: "vless"
+    server: "104.21.23.95"
+    port: 443
+    uuid: "852650c3-8ae5-4b75-8613-02a197a89309"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/zonnws"
+      headers: {"Host":"us8.candyfans.win"}
+    servername: "us8.candyfans.win"
+  - name: "Telegram_GOLDllVPN__40"
+    type: "vless"
+    server: "20.247.137.183"
+    port: 443
+    uuid: "78fc9ba9-9c68-4b49-891f-ea9e38bd3b56"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/proxyip=sjc.o00o.ooo"
+      headers: {"Host":"ak.suoni.nyc.mn"}
+    servername: "ak.suoni.nyc.mn"
+  - name: "Telegram_GOLDllVPN__41"
+    type: "vless"
+    server: "5.181.21.72"
+    port: 443
+    uuid: "e4b8df56-b680-4a34-ab47-5bf5738ed718"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "v9CxKfIPtkKH1cTGKEer-1i-3JL31vZPpPl2Ujnbjh8"
+      short-id: "85225c27630d023f"
+    servername: "www.google.com"
+  - name: "Telegram_GOLDllVPN__42"
+    type: "vless"
+    server: "46.33.10.106"
+    port: 8443
+    uuid: "ad7a9316-1953-439a-854f-66355100a004"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "DaQZOn4aunFuaOY7Em0FexFFOWVyYKrrkZKvv3X0VRE"
+      short-id: "de1da725"
+    servername: "web.max.ru"
+  - name: "Telegram_GOLDllVPN__43"
+    type: "vless"
+    server: "91.98.143.237"
+    port: 443
+    uuid: "95b1344a-2b59-419f-ab7d-2ff7e5c6aa34"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__44"
+    type: "vless"
+    server: "74.119.192.71"
+    port: 443
+    uuid: "0d0782a3-2c62-4936-b893-5790188778ea"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"74.119.192.71"}
+  - name: "Telegram_GOLDllVPN__45"
+    type: "vless"
+    server: "104.21.54.48"
+    port: 443
+    uuid: "b4bd0613-ff7c-4f2f-954d-185915e6ddad"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/@JavidnamanIran/Javid-SHAH-KingRezaPahlavi/?ed=2560"
+      headers: {"Host":"jnir-cdn.29394900.xyz"}
+    servername: "jnir-cdn.29394900.xyz"
+  - name: "Telegram_GOLDllVPN__46"
+    type: "vless"
+    server: "147.45.230.128"
+    port: 4443
+    uuid: "1859f2db-e6e8-4dc4-b21e-99da517e2e62"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE"
+      short-id: "aa7e96542880027a"
+    servername: "github.com"
+  - name: "Telegram_GOLDllVPN__47"
+    type: "vless"
+    server: "83.166.255.72"
+    port: 443
+    uuid: "eb162ab1-a006-4931-b1b3-8fc88a22b10e"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "zkeQCEkz7LlrzwzeG26Ae_HEk3_QlgM9CbiWJx5iWh0"
+    servername: "01.img.avito.st"
+  - name: "Telegram_GOLDllVPN__48"
+    type: "vless"
+    server: "108.162.195.45"
+    port: 443
+    uuid: "7270612b-49f6-4b04-999c-34d8263da767"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/aymdlws"
+      headers: {"Host":"picassoo.info"}
+    servername: "picassoo.info"
+  - name: "Telegram_GOLDllVPN__49"
+    type: "vless"
+    server: "83.166.255.72"
+    port: 443
+    uuid: "eb162ab1-a006-4931-b1b3-8fc88a22b10e"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "zkeQCEkz7LlrzwzeG26Ae_HEk3_QlgM9CbiWJx5iWh0"
+    servername: "01.img.avito.st"
+  - name: "Telegram_GOLDllVPN__50"
+    type: "vless"
+    server: "208.103.161.33"
+    port: 2053
+    uuid: "1a25f8ad-cad2-4e93-b5bf-34e42bcac02a"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"sni.111000.dynv6.net"}
+    servername: "sni.111000.dynv6.net"
+  - name: "Telegram_GOLDllVPN__51"
+    type: "vless"
+    server: "108.162.193.217"
+    port: 443
+    uuid: "ee122f13-9b54-49b6-abc5-aa47b464fdb3"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/yhowcws"
+      headers: {"Host":"azizoarjmand.info"}
+    servername: "azizoarjmand.info"
+  - name: "Telegram_GOLDllVPN__52"
+    type: "vless"
+    server: "57.129.49.1"
+    port: 23576
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
+    servername: "fuck.rkn"
+  - name: "Telegram_GOLDllVPN__53"
+    type: "vless"
+    server: "159.69.90.143"
+    port: 443
+    uuid: "f0ddd524-5089-48c8-804c-3f72b89d4a31"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "6P4admqWX-DD6_T5NFsB2osOSvGpMOUpOi7wPF20yQ0"
+      short-id: "06c2bb0de4e52af8"
+    servername: "tgju.org"
+  - name: "Telegram_GOLDllVPN__54"
+    type: "vless"
+    server: "185.136.132.171"
+    port: 24170
+    uuid: "fe21e399-ec6f-4cb5-8441-e911178665b1"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "VsmNi1ZMXVOwhCWpbCp51w-D_DzrxWX4jgfpcU0S9G4"
+      short-id: "2fb2106a629b"
+    servername: "speedtest.net"
+  - name: "Telegram_GOLDllVPN__55"
+    type: "vless"
+    server: "15.204.97.226"
+    port: 23576
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
+    servername: "fuck.rkn"
+  - name: "Telegram_GOLDllVPN__56"
+    type: "vless"
+    server: "15.204.97.146"
+    port: 23576
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
+    servername: "fuck.rkn"
+  - name: "Telegram_GOLDllVPN__57"
+    type: "vless"
+    server: "15.204.97.159"
+    port: 23576
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
+    servername: "fuck.rkn"
+  - name: "Telegram_GOLDllVPN__58"
+    type: "vless"
+    server: "51.250.65.209"
+    port: 443
+    uuid: "f2309653-bfe7-43ff-83fc-784b06210bfa"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg"
+      short-id: "33554379411b3219"
+    servername: "ads.x5.ru"
+  - name: "Telegram_GOLDllVPN__59"
+    type: "vless"
+    server: "91.107.243.172"
+    port: 39140
+    uuid: "986b6f0f-4809-43d5-87cc-c5e1971dc744"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "Telegram_GOLDllVPN__60"
+    type: "vless"
+    server: "208.103.161.33"
+    port: 2053
+    uuid: "1a25f8ad-cad2-4e93-b5bf-34e42bcac02a"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/?ed=2560"
+      headers: {"Host":"sni.111000.dynv6.net"}
+    servername: "sni.111000.dynv6.net"
+  - name: "Telegram_GOLDllVPN__61"
+    type: "vless"
+    server: "208.103.161.33"
+    port: 2053
+    uuid: "1a25f8ad-cad2-4e93-b5bf-34e42bcac02a"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"sni.111000.dynv6.net"}
+    servername: "sni.111000.dynv6.net"
+  - name: "Telegram_GOLDllVPN__62"
+    type: "vless"
+    server: "208.103.161.33"
+    port: 2053
+    uuid: "1a25f8ad-cad2-4e93-b5bf-34e42bcac02a"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"208.103.161.33"}
+    servername: "sni.111000.dynv6.net"
+  - name: "Telegram_GOLDllVPN__63"
+    type: "vless"
+    server: "83.166.237.115"
+    port: 8443
+    uuid: "13bb92b7-2bf4-4571-b687-b2af1265961a"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04"
+      short-id: "c6ef72e4635d15a5"
+    servername: "tradingview.com"
+  - name: "Telegram_GOLDllVPN__64"
+    type: "vless"
+    server: "90.156.150.229"
+    port: 443
+    uuid: "4c186abf-c15f-4a73-af74-cdeb78d29d81"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg"
+      short-id: "48fccabc158a4c22"
+    servername: "tradingview.com"
+  - name: "Telegram_GOLDllVPN__65"
+    type: "vless"
+    server: "94.131.110.128"
+    port: 443
+    uuid: "e615a5ba-fce3-4ffa-9c86-b0327a8a107a"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/hormoz"
+      headers: {"Host":"94.131.110.128"}
+  - name: "Telegram_GOLDllVPN__66"
+    type: "vless"
+    server: "130.193.35.232"
+    port: 443
+    uuid: "97dd83ab-b3b7-43e4-9002-c6bdcae0729d"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "_CjW0Khlrr5z5oc9Oy6-w2ZEanz-zMBktVn5EOX9oTM"
+      short-id: "6419bed7fd0a2cff"
+    servername: "tradingview.com"
+  - name: "Telegram_GOLDllVPN__67"
+    type: "vless"
+    server: "45.82.14.32"
+    port: 4443
+    uuid: "f228db24-3602-4dd2-bdec-2d7faa61e70b"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE"
+      short-id: "aa7e96542880027a"
+    servername: "github.com"
+  - name: "Telegram_GOLDllVPN__68"
+    type: "vless"
+    server: "130.193.59.3"
+    port: 443
+    uuid: "dc117fd8-6edd-444b-a56a-9cfee67f7257"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg"
+      short-id: "8ba12e75110b7a9c"
+    servername: "tradingview.com"
+  - name: "Telegram_GOLDllVPN__69"
+    type: "vless"
+    server: "85.9.205.54"
+    port: 4655
+    uuid: "2668fdee-331d-4770-8244-d2a4efbf6ef8"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "Telegram_GOLDllVPN__70"
+    type: "vless"
+    server: "162.159.62.23"
+    port: 2087
+    uuid: "e258977b-e413-4718-a3af-02d75492c349"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/?ed=2560"
+      headers: {"Host":"tw.xmm9527.xyz"}
+    servername: "tw.xmm9527.xyz"
+  - name: "Telegram_GOLDllVPN__71"
+    type: "vless"
+    server: "51.250.28.151"
+    port: 4248
+    uuid: "5ba2e48a-d36c-40a5-a4a1-2819ed6efce5"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+    servername: "ads.x5.ru"
+  - name: "Telegram_GOLDllVPN__72"
+    type: "vless"
+    server: "51.250.28.151"
+    port: 4248
+    uuid: "5ba2e48a-d36c-40a5-a4a1-2819ed6efce5"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+    servername: "ads.x5.ru"
+  - name: "Telegram_GOLDllVPN__73"
+    type: "vless"
+    server: "188.132.141.49"
+    port: 8443
+    uuid: "2b868940-71ca-41ed-833c-4657e8fd981b"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "hG9KBeeA2zzWVIZq4EnigRVx8VUCvQeokU5_PnBK2Ds"
+    servername: "docker.com"
+  - name: "Telegram_GOLDllVPN__74"
+    type: "vless"
+    server: "104.19.73.126"
+    port: 2053
+    uuid: "1a25f8ad-cad2-4e93-b5bf-34e42bcac02a"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/?ed=2560"
+      headers: {"Host":"sni.111000.dynv6.net"}
+    servername: "sni.111000.dynv6.net"
+  - name: "Telegram_GOLDllVPN__75"
+    type: "vless"
+    server: "104.17.45.15"
+    port: 443
+    uuid: "e258977b-e413-4718-a3af-02d75492c349"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/?ed=2560"
+      headers: {"Host":"sg.xmm9527.xyz"}
+    servername: "sg.xmm9527.xyz"
+  - name: "Telegram_GOLDllVPN__76"
+    type: "vless"
+    server: "45.80.108.238"
+    port: 2096
+    uuid: "1a25f8ad-cad2-4e93-b5bf-34e42bcac02a"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳@WangCai2"
+      headers: {"Host":"sni.111000.cc.cd"}
+    servername: "sni.111000.cc.cd"
+  - name: "Telegram_GOLDllVPN__77"
+    type: "vless"
+    server: "180.149.44.106"
+    port: 4655
+    uuid: "125ea501-6bbe-453a-ab42-352789be8154"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "Telegram_GOLDllVPN__78"
+    type: "vless"
+    server: "92.118.231.181"
+    port: 443
+    uuid: "e615a5ba-fce3-4ffa-9c86-b0327a8a107a"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/hormoz"
+      headers: {"Host":"92.118.231.181"}
+  - name: "Telegram_GOLDllVPN__79"
+    type: "vless"
+    server: "104.21.96.1"
+    port: 2096
+    uuid: "7bcb7241-33f9-48e0-8660-b33aed2bff7a"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"104.21.96.1"}
+    servername: "8j3f7HD37h.PaGES.dEV"
+    alpn:
+      - "http/1.1"
+  - name: "Telegram_GOLDllVPN__80"
+    type: "vless"
+    server: "172.64.146.20"
+    port: 2096
+    uuid: "1a25f8ad-cad2-4e93-b5bf-34e42bcac02a"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳 @WangCai2"
+      headers: {"Host":"sni.111000.cc.cd"}
+    servername: "sni.111000.cc.cd"
+  - name: "Telegram_GOLDllVPN__81"
+    type: "vless"
+    server: "23.81.33.188"
+    port: 443
+    uuid: "0aec5570-f7ab-4c9d-adc0-e095dfc57f00"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "_R8NVxs54qm4NfrOLP_1uaT_GRzVlQsW1VUssxYgixo"
+      short-id: "251123bfe74c15b3"
+    servername: "pn3web.sigmachemicals.ir"
+  - name: "Telegram_GOLDllVPN__82"
+    type: "vless"
+    server: "172.66.40.99"
+    port: 8443
+    uuid: "e999db7a-1b17-4da6-bc37-c9fa24af2e93"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"D0dTpVg4Z3.sOlEnTrAa.InFo"}
+    servername: "D0dTpVg4Z3.sOlEnTrAa.InFo"
+  - name: "Telegram_GOLDllVPN__83"
+    type: "vless"
+    server: "195.42.233.47"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__84"
+    type: "vless"
+    server: "94.131.14.195"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__85"
+    type: "vless"
+    server: "104.18.35.85"
+    port: 443
+    uuid: "060a8fe8-7175-4ded-94a5-d9808bc645b6"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"104.18.35.85"}
+    servername: "cf.vless.sandesh.fr"
+  - name: "Telegram_GOLDllVPN__86"
+    type: "vless"
+    server: "104.18.35.85"
+    port: 443
+    uuid: "060a8fe8-7175-4ded-94a5-d9808bc645b6"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"cf.vless.sandesh.fr"}
+    servername: "cf.vless.sandesh.fr"
+  - name: "Telegram_GOLDllVPN__87"
+    type: "vless"
+    server: "172.66.40.99"
+    port: 8443
+    uuid: "e999db7a-1b17-4da6-bc37-c9fa24af2e93"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"D0dTpVg4Z3.sOlEnTrAa.InFo"}
+    servername: "D0dTpVg4Z3.sOlEnTrAa.InFo"
+  - name: "Telegram_GOLDllVPN__88"
+    type: "vless"
+    server: "185.236.232.223"
+    port: 8880
+    uuid: "e4824193-4f54-453b-d037-88368e85ef0e"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__89"
+    type: "vless"
+    server: "172.66.156.81"
+    port: 80
+    uuid: "64d6d0d4-3706-4837-b154-cda2816adcc5"
+    network: "ws"
+    tls: false
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"crazy-identity.oneeat.co"}
+  - name: "Telegram_GOLDllVPN__90"
+    type: "vless"
+    server: "185.242.87.69"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__91"
+    type: "vless"
+    server: "92.243.74.239"
+    port: 8443
+    uuid: "8d5911d9-f9f9-484f-8f67-5729ab5fd1af"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/snippets?ip=tw.tp81.netlib.re:81"
+      headers: {"Host":"saas.cfliu.filegear-sg.me"}
+    servername: "saas.cfliu.filegear-sg.me"
+  - name: "Telegram_GOLDllVPN__92"
+    type: "vless"
+    server: "195.42.233.47"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__93"
+    type: "vless"
+    server: "104.18.35.85"
+    port: 443
+    uuid: "060a8fe8-7175-4ded-94a5-d9808bc645b6"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"104.18.35.85"}
+    servername: "cf.vless.sandesh.fr"
+  - name: "Telegram_GOLDllVPN__94"
+    type: "vless"
+    server: "45.12.142.89"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__95"
+    type: "vless"
+    server: "104.18.35.85"
+    port: 443
+    uuid: "060a8fe8-7175-4ded-94a5-d9808bc645b6"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"cf.vless.sandesh.fr"}
+    servername: "cf.vless.sandesh.fr"
+  - name: "Telegram_GOLDllVPN__96"
+    type: "vless"
+    server: "188.68.53.100"
+    port: 6666
+    uuid: "0abf9050-c7be-464d-80af-24094c2b97de"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "S_2bepGaT7EHeH5DdyEgio421RTgrAvvOOQiaq8zV0g"
+      short-id: "b525ecd2fc"
+    servername: "Tgju.org"
+  - name: "Telegram_GOLDllVPN__97"
+    type: "vless"
+    server: "104.21.42.42"
+    port: 80
+    uuid: "f282b878-8711-45a1-8c69-5564172123c1"
+    network: "ws"
+    tls: false
+    skip-cert-verify: true
+    ws-opts:
+      path: "/aioproxybot/146.190.192.43-80"
+      headers: {"Host":"aio.zipzap.biz.id"}
+  - name: "Telegram_GOLDllVPN__98"
+    type: "vless"
+    server: "185.242.87.69"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__99"
+    type: "vless"
+    server: "195.42.233.47"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__100"
+    type: "vless"
+    server: "91.84.113.124"
+    port: 1012
+    uuid: "ef475e23-17d8-44b1-a19e-438ba5d7e6d1"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "Telegram_GOLDllVPN__101"
+    type: "vless"
+    server: "195.42.233.105"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__102"
+    type: "vless"
+    server: "185.231.205.181"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__103"
+    type: "vless"
+    server: "85.208.110.205"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__104"
+    type: "vless"
+    server: "86.104.74.45"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__105"
+    type: "vless"
+    server: "188.245.222.196"
+    port: 2560
+    uuid: "7da05388-1749-417d-90f3-e7d980565471"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "2hoQE6WBJlr4DHrp7TxqPOT8i24iodEaCQp-qugbD3U"
+      short-id: "e41865e506628f44"
+    servername: "cloudflare.com"
+  - name: "Telegram_GOLDllVPN__106"
+    type: "vless"
+    server: "172.66.40.99"
+    port: 8443
+    uuid: "e999db7a-1b17-4da6-bc37-c9fa24af2e93"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"172.66.40.99"}
+    servername: "Rx2TfQ98lT.sOlEnTrAa.InFo"
+  - name: "Telegram_GOLDllVPN__107"
+    type: "vless"
+    server: "51.38.220.186"
+    port: 35588
+    uuid: "6b3a7034-39ec-f057-377d-cf6af57b4db4"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "DFGsM_I2pY_5pHisx2CrD-RgI3UcTBmEOa0-wdW5ly4"
+      short-id: "5f4ab2905a60052e"
+    servername: "www.cloudflare.com"
+  - name: "Telegram_GOLDllVPN__108"
+    type: "vless"
+    server: "188.34.179.15"
+    port: 2560
+    uuid: "7da05388-1749-417d-90f3-e7d980565471"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "2hoQE6WBJlr4DHrp7TxqPOT8i24iodEaCQp-qugbD3U"
+      short-id: "e41865e506628f44"
+    servername: "cloudflare.com"
+  - name: "Telegram_GOLDllVPN__109"
+    type: "vless"
+    server: "51.68.146.216"
+    port: 35588
+    uuid: "6b3a7034-39ec-f057-377d-cf6af57b4db4"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "DFGsM_I2pY_5pHisx2CrD-RgI3UcTBmEOa0-wdW5ly4"
+      short-id: "5f4ab2905a60052e"
+    servername: "cloudflare.com"
+  - name: "Telegram_GOLDllVPN__110"
+    type: "vless"
+    server: "172.66.156.81"
+    port: 80
+    uuid: "64d6d0d4-3706-4837-b154-cda2816adcc5"
+    network: "ws"
+    tls: false
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"crazy-identity.oneeat.co"}
+  - name: "Telegram_GOLDllVPN__111"
+    type: "vless"
+    server: "192.142.10.244"
+    port: 2560
+    uuid: "7da05388-1749-417d-90f3-e7d980565471"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "2hoQE6WBJlr4DHrp7TxqPOT8i24iodEaCQp-qugbD3U"
+      short-id: "e41865e506628f44"
+    servername: "www.cloudflare.com"
+  - name: "Telegram_GOLDllVPN__112"
+    type: "vless"
+    server: "172.66.40.99"
+    port: 2096
+    uuid: "e999db7a-1b17-4da6-bc37-c9fa24af2e93"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"6Dd1Xt31Qm.SoLeNtRaA.iNfO"}
+    servername: "6Dd1Xt31Qm.SoLeNtRaA.iNfO"
+    alpn:
+      - "h3"
+      - "h2"
+  - name: "Telegram_GOLDllVPN__113"
+    type: "vless"
+    server: "45.144.28.5"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__114"
+    type: "vless"
+    server: "185.59.218.168"
+    port: 443
+    uuid: "401374e6-df77-41fb-f638-dad8184f175b"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+    servername: "pqh23v4.hiddendom.shop"
+  - name: "Telegram_GOLDllVPN__115"
+    type: "vless"
+    server: "172.66.40.99"
+    port: 8443
+    uuid: "e999db7a-1b17-4da6-bc37-c9fa24af2e93"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"D0dTpVg4Z3.sOlEnTrAa.InFo"}
+    servername: "D0dTpVg4Z3.sOlEnTrAa.InFo"
+  - name: "Telegram_GOLDllVPN__116"
+    type: "vless"
+    server: "188.132.183.15"
+    port: 2560
+    uuid: "7da05388-1749-417d-90f3-e7d980565471"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "2hoQE6WBJlr4DHrp7TxqPOT8i24iodEaCQp-qugbD3U"
+      short-id: "e41865e506628f44"
+    servername: "www.cloudflare.com"
+  - name: "Telegram_GOLDllVPN__117"
+    type: "vless"
+    server: "81.200.158.206"
+    port: 8443
+    uuid: "b65f4df7-f6af-42b2-877a-cef33f21675e"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560fp=chrome"
+      headers: {"Host":"kejiland.freewarp.eu.org"}
+    servername: "kejiland.freewarp.eu.org"
+  - name: "Telegram_GOLDllVPN__118"
+    type: "vless"
+    server: "27.50.48.154"
+    port: 8443
+    uuid: "8d5911d9-f9f9-484f-8f67-5729ab5fd1af"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/snippets?ip=tw.tp81.netlib.re:81"
+      headers: {"Host":"saas.cfliu.filegear-sg.me"}
+    servername: "saas.cfliu.filegear-sg.me"
+  - name: "Telegram_GOLDllVPN__119"
+    type: "vless"
+    server: "141.101.120.5"
+    port: 443
+    uuid: "d342d11e-d424-4583-b36e-524ab1f0afa4"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/snippets/ip=tw.tp81.netlib.re:81?ed=2560"
+      headers: {"Host":"xn--kwr11l51ffzytxy.CMLiussss.dedyn.io"}
+    servername: "xn--kwr11l51ffzytxy.CMLiussss.dedyn.io"
+  - name: "Telegram_GOLDllVPN__120"
+    type: "vless"
+    server: "172.66.40.99"
+    port: 8443
+    uuid: "e999db7a-1b17-4da6-bc37-c9fa24af2e93"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"172.66.40.99"}
+    servername: "Rx2TfQ98lT.sOlEnTrAa.InFo"
+  - name: "Telegram_GOLDllVPN__121"
+    type: "vless"
+    server: "94.141.123.233"
+    port: 443
+    uuid: "a1d93599-b324-4931-9190-8684487d00d5"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "vfmqSXTEjdIOgz43eZTNzBRztAvd1U1dDkSz_mnaSk4"
+      short-id: "bc97736f81817c41"
+    servername: "cdnjs.com"
+  - name: "Telegram_GOLDllVPN__122"
+    type: "vless"
+    server: "195.42.233.47"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__123"
+    type: "vless"
+    server: "172.66.156.81"
+    port: 80
+    uuid: "64d6d0d4-3706-4837-b154-cda2816adcc5"
+    network: "ws"
+    tls: false
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"crazy-identity.oneeat.co"}
+  - name: "Telegram_GOLDllVPN__124"
+    type: "vless"
+    server: "51.68.146.216"
+    port: 35588
+    uuid: "6b3a7034-39ec-f057-377d-cf6af57b4db4"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "DFGsM_I2pY_5pHisx2CrD-RgI3UcTBmEOa0-wdW5ly4"
+      short-id: "5f4ab2905a60052e"
+    servername: "cloudflare.com"
+  - name: "Telegram_GOLDllVPN__125"
+    type: "vless"
+    server: "103.116.7.103"
+    port: 2083
+    uuid: "8d5911d9-f9f9-484f-8f67-5729ab5fd1af"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/snippets?ip=tw.tp81.netlib.re:81"
+      headers: {"Host":"saas.cfliu.filegear-sg.me"}
+    servername: "saas.cfliu.filegear-sg.me"
+  - name: "Telegram_GOLDllVPN__126"
+    type: "vless"
+    server: "192.0.54.32"
+    port: 2096
+    uuid: "b65f4df7-f6af-42b2-877a-cef33f21675e"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/snippets"
+      headers: {"Host":"kejiland.freewarp.eu.org"}
+    servername: "kejiland.freewarp.eu.org"
+  - name: "Telegram_GOLDllVPN__127"
+    type: "vless"
+    server: "51.38.220.186"
+    port: 35588
+    uuid: "6b3a7034-39ec-f057-377d-cf6af57b4db4"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "DFGsM_I2pY_5pHisx2CrD-RgI3UcTBmEOa0-wdW5ly4"
+      short-id: "5f4ab2905a60052e"
+    servername: "www.cloudflare.com"
+  - name: "Telegram_GOLDllVPN__128"
+    type: "vless"
+    server: "638941610438943596.copenhagen-prx-dnraacm.info"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__129"
+    type: "vless"
+    server: "638942397698496885.dublin-drc-tusacaf.info"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__130"
+    type: "vless"
+    server: "638938755008242773.vienna-drc-tusacaf.info"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__131"
+    type: "vless"
+    server: "638937544595891094.madrid-prx-dnraacl.info"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__132"
+    type: "vless"
+    server: "638938728943989934.esfahan-prx-dnraacl.info"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__133"
+    type: "vless"
+    server: "185.236.232.189"
+    port: 8880
+    uuid: "e4824193-4f54-453b-d037-88368e85ef0e"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__134"
+    type: "vless"
+    server: "45.82.251.114"
+    port: 8880
+    uuid: "e4824193-4f54-453b-d037-88368e85ef0e"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__135"
+    type: "vless"
+    server: "185.236.232.72"
+    port: 8880
+    uuid: "e4824193-4f54-453b-d037-88368e85ef0e"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__136"
+    type: "vless"
+    server: "185.236.232.91"
+    port: 8880
+    uuid: "e4824193-4f54-453b-d037-88368e85ef0e"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__137"
+    type: "vless"
+    server: "45.82.251.142"
+    port: 8880
+    uuid: "e4824193-4f54-453b-d037-88368e85ef0e"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__138"
+    type: "vless"
+    server: "wetest.xn--vip-ob6fs36j.cloudflare.182682.xyz"
+    port: 443
+    uuid: "d342d11e-d424-4583-b36e-524ab1f0afa4"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/snippets/ip=tw.tp81.netlib.re:81?ed=2560"
+      headers: {"Host":"xn--kwr11l51ffzytxy.CMLiussss.dedyn.io"}
+    servername: "xn--kwr11l51ffzytxy.CMLiussss.dedyn.io"
+  - name: "Telegram_GOLDllVPN__139"
+    type: "vless"
+    server: "638946555860201969.lisbon-prx-dnraacq.info"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__140"
+    type: "vless"
+    server: "638942912656604786.malayer-prx-dnraacm.info"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__141"
+    type: "vless"
+    server: "45.12.133.235"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__142"
+    type: "vless"
+    server: "638946555860213179.lisbon-prx-dnraacq.info"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__143"
+    type: "vless"
+    server: "638944337658439808.dezful-prx-dnraacp.info"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__144"
+    type: "vless"
+    server: "638946986851068158.hamedan-drc-tusabl.info"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__145"
+    type: "vless"
+    server: "638942397698496885.dublin-drc-tusacaf.info"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__146"
+    type: "vless"
+    server: "185.242.87.247"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__147"
+    type: "vless"
+    server: "638942644808582511.abadan-drc-tusacaf.info"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__148"
+    type: "vless"
+    server: "185.234.66.89"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__149"
+    type: "vless"
+    server: "638938755008242773.vienna-drc-tusacaf.info"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__150"
+    type: "vless"
+    server: "638946555860201969.lisbon-prx-dnraacq.info"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__151"
+    type: "vless"
+    server: "638942912656604786.malayer-prx-dnraacm.info"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__152"
+    type: "vless"
+    server: "638946986851076125.hamedan-drc-tusabl.info"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__153"
+    type: "vless"
+    server: "638946555860213179.lisbon-prx-dnraacq.info"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__154"
+    type: "vless"
+    server: "45.144.28.5"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__155"
+    type: "vless"
+    server: "638938755008242773.vienna-drc-tusacaf.info"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__156"
+    type: "vless"
+    server: "638938755008244100.vienna-drc-tusacaf.info"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__157"
+    type: "vless"
+    server: "185.234.66.89"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__158"
+    type: "vless"
+    server: "638929259959016671.dezful-drc-tusabq.info"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__159"
+    type: "vless"
+    server: "638942644808582511.abadan-drc-tusacaf.info"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__160"
+    type: "vless"
+    server: "638937918607957654.paris-drc-tusacaf.info"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__161"
+    type: "vless"
+    server: "104.20.30.132"
+    port: 443
+    uuid: "41b55c53-7776-4727-b05d-1ccf9cc409a5"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/Free-VPN-Geo-Project/91.187.93.166-443"
+      headers: {"Host":"gamang.gpj2.dpdns.org"}
+    servername: "gamang.gpj2.dpdns.org"
+  - name: "Telegram_GOLDllVPN__162"
+    type: "vless"
+    server: "185.251.80.54"
+    port: 2096
+    uuid: "12345678-1234-1234-1234-123456789123"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/snippets#/?ed=512"
+      headers: {"Host":"sni.aizrf.com"}
+    servername: "sni.aizrf.com"
+  - name: "Telegram_GOLDllVPN__163"
+    type: "vless"
+    server: "162.159.152.155"
+    port: 443
+    uuid: "0667820d-f8a9-4652-a3b9-efadc06af433"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/snippets/ip=tp50000.kr.proxyip.fgfw.eu.org:50000"
+      headers: {"Host":"sni.aizrf.com"}
+    servername: "sni.aizrf.com"
+    alpn:
+      - "h3"
+  - name: "Telegram_GOLDllVPN__164"
+    type: "vless"
+    server: "91.206.71.54"
+    port: 2096
+    uuid: "12345678-1234-1234-1234-123456789123"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/snippets"
+      headers: {"Host":"sni.aizrf.com"}
+    servername: "sni.aizrf.com"
+  - name: "Telegram_GOLDllVPN__165"
+    type: "vless"
+    server: "94.131.13.181"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__166"
+    type: "vless"
+    server: "164.92.188.15"
+    port: 9696
+    uuid: "bcc560e0-173b-4c49-a4ce-742c3fae0028"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "Y_GsfLRoTP6SXIyYQjrn8TM_nce7Y9RIoEfWTJ35sGI"
+    servername: "icloud.cdn-apple.com"
+  - name: "Telegram_GOLDllVPN__167"
+    type: "vless"
+    server: "185.234.66.89"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__168"
+    type: "vless"
+    server: "185.242.87.247"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__169"
+    type: "vless"
+    server: "638950280434434528.neyshabur-drc-tusacaf.info"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__170"
+    type: "vless"
+    server: "185.242.87.154"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__171"
+    type: "vless"
+    server: "45.12.133.235"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__172"
+    type: "vless"
+    server: "92.243.74.239"
+    port: 8443
+    uuid: "8d5911d9-f9f9-484f-8f67-5729ab5fd1af"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/snippets?ip=tw.tp81.netlib.re:81"
+      headers: {"Host":"92.243.74.239"}
+    servername: "saas.cfliu.filegear-sg.me"
+  - name: "Telegram_GOLDllVPN__173"
+    type: "vless"
+    server: "172.66.40.99"
+    port: 8443
+    uuid: "e999db7a-1b17-4da6-bc37-c9fa24af2e93"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"D0dTpVg4Z3.sOlEnTrAa.InFo"}
+    servername: "D0dTpVg4Z3.sOlEnTrAa.InFo"
+  - name: "Telegram_GOLDllVPN__174"
+    type: "vless"
+    server: "638952778316595016.hamedan-drc-tusaas.info"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__175"
+    type: "vless"
+    server: "199.34.229.32"
+    port: 2096
+    uuid: "b65f4df7-f6af-42b2-877a-cef33f21675e"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/snippetsfp"
+      headers: {"Host":"kejiland.freewarp.eu.org"}
+    servername: "kejiland.freewarp.eu.org"
+  - name: "Telegram_GOLDllVPN__176"
+    type: "vless"
+    server: "104.19.150.163"
+    port: 8443
+    uuid: "9ea5a2f5-3a56-4282-919c-4dfee486372e"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"104.19.150.163"}
+    servername: "vless.keepfuck.me"
+  - name: "Telegram_GOLDllVPN__177"
+    type: "vless"
+    server: "91.98.47.45"
+    port: 443
+    uuid: "d4803c0d-c9f3-4c9c-a034-342a71ef03a0"
+    network: "ws"
+    tls: false
+    skip-cert-verify: true
+    ws-opts:
+      path: "/linkws?ed"
+      headers: {"Host":"91.98.47.45"}
+  - name: "Telegram_GOLDllVPN__178"
+    type: "vless"
+    server: "198.71.233.50"
+    port: 2096
+    uuid: "12345678-1234-1234-1234-123456789123"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/snippets"
+      headers: {"Host":"saas.sosocn.abrdns.com"}
+    servername: "saas.sosocn.abrdns.com"
+  - name: "Telegram_GOLDllVPN__179"
+    type: "vless"
+    server: "185.242.87.213"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__180"
+    type: "vless"
+    server: "638950280434430524.neyshabur-drc-tusacaf.info"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__181"
+    type: "vless"
+    server: "172.67.168.193"
+    port: 80
+    uuid: "61374417-9218-4065-909b-ad1e3b50aa83"
+    network: "ws"
+    tls: false
+    skip-cert-verify: true
+    ws-opts:
+      path: "/Free-VPN-Geo-Project/80.66.85.115-2053"
+      headers: {"Host":"gamang.gpj2.dpdns.org"}
+  - name: "Telegram_GOLDllVPN__182"
+    type: "vless"
+    server: "172.66.156.81"
+    port: 80
+    uuid: "64d6d0d4-3706-4837-b154-cda2816adcc5"
+    network: "ws"
+    tls: false
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"crazy-identity.oneeat.co"}
+  - name: "Telegram_GOLDllVPN__183"
+    type: "vless"
+    server: "638952778316586254.hamedan-drc-tusaas.info"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__184"
+    type: "vless"
+    server: "195.42.233.105"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__185"
+    type: "vless"
+    server: "45.12.142.55"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__186"
+    type: "vless"
+    server: "638950330462892661.neyshabur-prx-dnraacr.info"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__187"
+    type: "vless"
+    server: "104.20.43.81"
+    port: 80
+    uuid: "64d6d0d4-3706-4837-b154-cda2816adcc5"
+    network: "ws"
+    tls: false
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"crazy-identity.oneeat.co"}
+  - name: "Telegram_GOLDllVPN__188"
+    type: "vless"
+    server: "80.92.206.19"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__189"
+    type: "vless"
+    server: "94.131.13.14"
+    port: 443
+    uuid: "fe27c0c7-6602-4b20-a8e4-d8eff275dbee"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "llaiqC-oIhL_bjc236FPq26LSn7IVhIa4cIC6OVytws"
+      short-id: "31"
+    servername: "hls-svod.itunes.apple.com"
+  - name: "Telegram_GOLDllVPN__190"
+    type: "vless"
+    server: "80.92.206.172"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__191"
+    type: "vless"
+    server: "91.147.92.153"
+    port: 443
+    uuid: "c80bbc09-837d-495f-bebc-3e8ac5dede41"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg"
+      short-id: "f79448a30d"
+    servername: "hls-svod.itunes.apple.com"
+  - name: "Telegram_GOLDllVPN__192"
+    type: "vless"
+    server: "195.42.233.124"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__193"
+    type: "vless"
+    server: "91.99.181.225"
+    port: 443
+    uuid: "0c0b6d4a-0811-460f-d4b0-dd982a911240"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "zW8LR-lHS_PXDyY8Q8bE_zvKdhY5MAmnsd8miBulx2U"
+    servername: "store.steampowered.com"
+  - name: "Telegram_GOLDllVPN__194"
+    type: "vless"
+    server: "94.131.14.195"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__195"
+    type: "vless"
+    server: "85.208.110.41"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__196"
+    type: "vless"
+    server: "638948510129819770.dezful-drc-tusaas.info"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__197"
+    type: "vless"
+    server: "638952778316595617.hamedan-drc-tusaas.info"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__198"
+    type: "vless"
+    server: "185.242.87.159"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__199"
+    type: "vless"
+    server: "638949521660379297.copenhagen-prx-dnraacr.info"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__200"
+    type: "vless"
+    server: "45.144.28.5"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__201"
+    type: "vless"
+    server: "185.236.232.98"
+    port: 80
+    uuid: "401374e6-df77-41fb-f638-dad8184f175b"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__202"
+    type: "vless"
+    server: "5.181.171.10"
+    port: 443
+    uuid: "49ed01ad-3bb4-204f-b0ff-a58f658fd618"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "YNGotlyAx3ELUmi4lxOUjiEDmibqf1pPUTE9o3YYT2Y"
+    servername: "speed.cloudflare.com"
+  - name: "Telegram_GOLDllVPN__203"
+    type: "vless"
+    server: "185.236.232.94"
+    port: 80
+    uuid: "401374e6-df77-41fb-f638-dad8184f175b"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__204"
+    type: "vless"
+    server: "195.42.233.105"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__205"
+    type: "vless"
+    server: "638946986851076125.hamedan-drc-tusabl.info"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__206"
+    type: "vless"
+    server: "638946072491006050.hamedan-drc-tusacaf.info"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__207"
+    type: "vless"
+    server: "185.242.87.213"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__208"
+    type: "vless"
+    server: "5.182.36.251"
+    port: 16331
+    uuid: "d7dbeb1e-268c-465c-8f59-489f14703efd"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "wYtc0dMr5fw5bBQkbLNpTqtu0m4B9NKnOyEWjRJUmzk"
+      short-id: "910aab"
+    servername: "yahoo.com"
+  - name: "Telegram_GOLDllVPN__209"
+    type: "vless"
+    server: "157.180.123.25"
+    port: 443
+    uuid: "638c1918-f6f0-4ecc-85e6-a3ac50ed9c02"
+    network: "ws"
+    tls: false
+    skip-cert-verify: true
+    ws-opts:
+      path: "/linkws?ed=2560"
+      headers: {"Host":"157.180.123.25"}
+  - name: "Telegram_GOLDllVPN__210"
+    type: "vless"
+    server: "94.131.14.200"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__211"
+    type: "vless"
+    server: "94.131.14.195"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__212"
+    type: "vless"
+    server: "45.12.142.55"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__213"
+    type: "vless"
+    server: "185.236.232.100"
+    port: 80
+    uuid: "401374e6-df77-41fb-f638-dad8184f175b"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__214"
+    type: "vless"
+    server: "90.156.254.164"
+    port: 40432
+    uuid: "5ae45629-3db6-4c6b-9b9e-346c3e1a798d"
+    network: "ws"
+    tls: false
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"90.156.254.164"}
+  - name: "Telegram_GOLDllVPN__215"
+    type: "vless"
+    server: "85.209.153.82"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__216"
+    type: "vless"
+    server: "45.144.28.5"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__217"
+    type: "vless"
+    server: "638970192452860730.helsinki-blkaft-aaax.info"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__218"
+    type: "vless"
+    server: "171.22.114.248"
+    port: 27394
+    uuid: "00b0d4de-b126-4511-87c1-8f1feb462fa6"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "TZO1nvxk-x90cL3v9ixowQNC56sQ8k76_KaGU6jczks"
+      short-id: "c2fa"
+    servername: "yahoo.com"
+  - name: "Telegram_GOLDllVPN__219"
+    type: "vless"
+    server: "178.62.38.217"
+    port: 2096
+    uuid: "03ed82a4-0dea-46f6-c360-e8f9b52a1fe1"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+    reality-opts:
+      public-key: "_BSvscSk78rGaJGR37oPCezKH0jfztKtdCOj9rRZGFY"
+    servername: "zula.ir"
+  - name: "Telegram_GOLDllVPN__220"
+    type: "vless"
+    server: "5.10.214.253"
+    port: 2096
+    uuid: "7556317c-dff6-46e8-ad29-b408f2a6456e"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/Telegram @freecodes /?ed=2560security=tls"
+      headers: {"Host":"vless.muzheng.top"}
+    servername: "vless.muzheng.top"
+  - name: "Telegram_GOLDllVPN__221"
+    type: "vless"
+    server: "31.170.22.198"
+    port: 443
+    uuid: "95a68484-796e-4eae-b52a-4abfb0e72296"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "imXuUOiAB_4FnOdimm98VJtIMXcpKvJmhC7vU0F4Sys"
+      short-id: "e220812ec9f3"
+    servername: "google.com"
+  - name: "Telegram_GOLDllVPN__222"
+    type: "vless"
+    server: "91.228.10.89"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__223"
+    type: "vless"
+    server: "85.208.110.38"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__224"
+    type: "vless"
+    server: "85.209.195.174"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__225"
+    type: "vless"
+    server: "57.128.163.127"
+    port: 33801
+    uuid: "d36f457f-17a9-4891-a113-322ec6792917"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "Telegram_GOLDllVPN__226"
+    type: "vless"
+    server: "638948510129819770.dezful-drc-tusaas.info"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__227"
+    type: "vless"
+    server: "185.236.232.108"
+    port: 80
+    uuid: "401374e6-df77-41fb-f638-dad8184f175b"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__228"
+    type: "vless"
+    server: "72.167.25.253"
+    port: 2096
+    uuid: "f61a4285-7264-4d07-9408-7b9ba1922c26"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/Telegramsecurity=tls"
+      headers: {"Host":"gaosir.unfeeling.sbs"}
+    servername: "gaosir.unfeeling.sbs"
+  - name: "Telegram_GOLDllVPN__229"
+    type: "vless"
+    server: "turkey8.yourbot.me"
+    port: 443
+    uuid: "041b0e57-d4f6-4332-8296-a06a046241fc"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "OBKACuWea1rLl-_caAlsIu_V40AGwisGpq84qQwWRks"
+      short-id: "a26808"
+    servername: "ftp.debian.org"
+  - name: "Telegram_GOLDllVPN__230"
+    type: "vless"
+    server: "germany85.clearorbitllc.com"
+    port: 443
+    uuid: "72fa752b-7731-4390-98cb-62b57344e847"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "n5F7RiT4wzYN_JM-Lxwff24YVZy3HHFsVoXtJmRT2BY"
+      short-id: "80dc32ed"
+    servername: "germany85.clearorbitllc.com"
+  - name: "Telegram_GOLDllVPN__231"
+    type: "vless"
+    server: "uk29.clearorbitllc.com"
+    port: 443
+    uuid: "4f8b80d1-667e-4ab5-9285-0fbd0e3dcab2"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "ypGN6MzbIpHm_fdhVIIUS-vLCXlNkOZrxZ4VNMxcxWw"
+      short-id: "7286"
+    servername: "uk29.clearorbitllc.com"
+  - name: "Telegram_GOLDllVPN__232"
+    type: "vless"
+    server: "172.67.204.84"
+    port: 443
+    uuid: "48300e8d-4f24-483b-a817-f5e894f06b68"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"172.67.204.84"}
+    servername: "companypdf9.pages.dev"
+  - name: "Telegram_GOLDllVPN__233"
+    type: "vless"
+    server: "dl5-uk4-cdn.fastfilecdn.org"
+    port: 2052
+    uuid: "c93c6014-d516-4a11-b204-a4a1bfa22dc4"
+    network: "ws"
+    tls: false
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"dl5-uk4-cdn.fastfilecdn.org"}
+  - name: "Telegram_GOLDllVPN__234"
+    type: "vless"
+    server: "netherlands85.clearorbitllc.com"
+    port: 443
+    uuid: "935c3575-4b93-4c03-8399-62b2d0efe0d2"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "LnHe8OE64vocdz6Xk_d6iuEfj-HmimAkLPk1TeTGpxs"
+      short-id: "f5320ae817"
+    servername: "netherlands85.clearorbitllc.com"
+  - name: "Telegram_GOLDllVPN__235"
+    type: "vless"
+    server: "latvia9.clearorbitllc.com"
+    port: 443
+    uuid: "a7a00c48-434a-4e3b-954f-2720f9874000"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "HbSPzDQrCdRDsFIMim4R2ZQBKNK_5KVwwVWB8EkSQHs"
+      short-id: "dfa20e"
+    servername: "latvia9.clearorbitllc.com"
+  - name: "Telegram_GOLDllVPN__236"
+    type: "vless"
+    server: "185.138.164.2"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__237"
+    type: "vless"
+    server: "31.6.1.187"
+    port: 25607
+    uuid: "c8451b58-6337-4294-ba28-1a33731331a1"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "j5CgrKQgkDV5bC5Y4pB0lGNupDYxklIDgge4HL1X3zE"
+      short-id: "84"
+    servername: "store.steampowered.com"
+  - name: "Telegram_GOLDllVPN__238"
+    type: "vless"
+    server: "axe.soyet2j.ir"
+    port: 2087
+    uuid: "8fa36937-32b6-4a4f-bd64-74164b67895c"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/index.html?ed=2560"
+      headers: {"Host":"latte.gejeh683bm.ir"}
+    servername: "latte.gejeh683bm.ir."
+  - name: "Telegram_GOLDllVPN__239"
+    type: "vless"
+    server: "172.67.204.84"
+    port: 443
+    uuid: "48300e8d-4f24-483b-a817-f5e894f06b68"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"172.67.204.84"}
+    servername: "companypdf9.pages.dev"
+  - name: "Telegram_GOLDllVPN__240"
+    type: "vless"
+    server: "162.159.152.53"
+    port: 443
+    uuid: "29187857-4a1f-4d1e-88eb-0016771e0dbb"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"162.159.152.53"}
+    servername: "vless.hubp.de"
+    alpn:
+      - "h3"
+  - name: "Telegram_GOLDllVPN__241"
+    type: "vless"
+    server: "5.10.214.253"
+    port: 2096
+    uuid: "7556317c-dff6-46e8-ad29-b408f2a6456e"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"5.10.214.253"}
+    servername: "vless.muzheng.top"
+  - name: "Telegram_GOLDllVPN__242"
+    type: "vless"
+    server: "104.18.82.55"
+    port: 443
+    uuid: "29187857-4a1f-4d1e-88eb-0016771e0dbb"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "Join---T-T"
+      headers: {"Host":"vless.hubp.de"}
+    servername: "vless.hubp.de"
+    alpn:
+      - "h3"
+  - name: "Telegram_GOLDllVPN__243"
+    type: "vless"
+    server: "104.18.82.55"
+    port: 443
+    uuid: "29187857-4a1f-4d1e-88eb-0016771e0dbb"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"104.18.82.55"}
+    servername: "vless.hubp.de"
+    alpn:
+      - "h3"
+  - name: "Telegram_GOLDllVPN__244"
+    type: "vless"
+    server: "171.22.114.194"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__245"
+    type: "vless"
+    server: "104.18.82.55"
+    port: 443
+    uuid: "29187857-4a1f-4d1e-88eb-0016771e0dbb"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/?ed=2560"
+      headers: {"Host":"vless.hubp.de"}
+    servername: "vless.hubp.de"
+    alpn:
+      - "h3"
+  - name: "Telegram_GOLDllVPN__246"
+    type: "vless"
+    server: "27.50.48.8"
+    port: 443
+    uuid: "602b380a-9fdf-4425-bc07-aae9a95cfc4b"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"27.50.48.8"}
+    servername: "vless.hubp.de"
+    alpn:
+      - "h3"
+  - name: "Telegram_GOLDllVPN__247"
+    type: "vless"
+    server: "46.250.237.164"
+    port: 55076
+    uuid: "fe7d9497-c04b-4462-900d-333abc79a90f"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "Telegram_GOLDllVPN__248"
+    type: "vless"
+    server: "94.232.247.61"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__249"
+    type: "vless"
+    server: "172.67.204.84"
+    port: 443
+    uuid: "48300e8d-4f24-483b-a817-f5e894f06b68"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"172.67.204.84"}
+    servername: "companypdf9.pages.dev"
+  - name: "Telegram_GOLDllVPN__250"
+    type: "vless"
+    server: "162.159.152.53"
+    port: 443
+    uuid: "29187857-4a1f-4d1e-88eb-0016771e0dbb"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"162.159.152.53"}
+    servername: "vless.hubp.de"
+    alpn:
+      - "h3"
+  - name: "Telegram_GOLDllVPN__251"
+    type: "vless"
+    server: "5.10.214.253"
+    port: 2096
+    uuid: "7556317c-dff6-46e8-ad29-b408f2a6456e"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"5.10.214.253"}
+    servername: "vless.muzheng.top"
+  - name: "Telegram_GOLDllVPN__252"
+    type: "vless"
+    server: "104.18.82.55"
+    port: 443
+    uuid: "29187857-4a1f-4d1e-88eb-0016771e0dbb"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "Join---T-T"
+      headers: {"Host":"vless.hubp.de"}
+    servername: "vless.hubp.de"
+    alpn:
+      - "h3"
+  - name: "Telegram_GOLDllVPN__253"
+    type: "vless"
+    server: "104.18.82.55"
+    port: 443
+    uuid: "29187857-4a1f-4d1e-88eb-0016771e0dbb"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"104.18.82.55"}
+    servername: "vless.hubp.de"
+    alpn:
+      - "h3"
+  - name: "Telegram_GOLDllVPN__254"
+    type: "vless"
+    server: "171.22.114.194"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__255"
+    type: "vless"
+    server: "104.18.82.55"
+    port: 443
+    uuid: "29187857-4a1f-4d1e-88eb-0016771e0dbb"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/?ed=2560"
+      headers: {"Host":"vless.hubp.de"}
+    servername: "vless.hubp.de"
+    alpn:
+      - "h3"
+  - name: "Telegram_GOLDllVPN__256"
+    type: "vless"
+    server: "27.50.48.8"
+    port: 443
+    uuid: "602b380a-9fdf-4425-bc07-aae9a95cfc4b"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"27.50.48.8"}
+    servername: "vless.hubp.de"
+    alpn:
+      - "h3"
+  - name: "Telegram_GOLDllVPN__257"
+    type: "vless"
+    server: "46.250.237.164"
+    port: 55076
+    uuid: "fe7d9497-c04b-4462-900d-333abc79a90f"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "Telegram_GOLDllVPN__258"
+    type: "vless"
+    server: "94.232.247.61"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__259"
+    type: "vless"
+    server: "beast-masters.fonixapp.org"
+    port: 49406
+    uuid: "49d74535-837e-4132-90c7-4e06de7db303"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "UsAOmf7X1yYkjF73ChFECcZb2PFNuhqqvOUxcybV-20"
+      short-id: "a7"
+    servername: "ilovepdf.com"
+  - name: "Telegram_GOLDllVPN__260"
+    type: "vless"
+    server: "huskar.fonixapp.org"
+    port: 47072
+    uuid: "6e6cc44d-2ced-49a2-a7f1-e879847c1c57"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "5-GF4dwBQeyOgXR7OPMEHlXd47odGu1r8ukE-0Prd0o"
+      short-id: "e39212f3"
+    servername: "yelp.com"
+  - name: "Telegram_GOLDllVPN__261"
+    type: "vless"
+    server: "facelessvoid.fonixapp.org"
+    port: 36563
+    uuid: "c25a90ea-6a3b-4d87-95b3-8ca4232f2a6e"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "tPpkzwOVa4li8CurZc07pnxl8ytBUm9x4b9TBP99h00"
+      short-id: "c294d6ba98e6a7"
+    servername: "expedia.com"
+  - name: "Telegram_GOLDllVPN__262"
+    type: "vless"
+    server: "104.18.82.55"
+    port: 443
+    uuid: "29187857-4a1f-4d1e-88eb-0016771e0dbb"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/?ed=2560J---_T"
+      headers: {"Host":"104.18.82.55"}
+    servername: "vless.hubp.de"
+    alpn:
+      - "h3"
+  - name: "Telegram_GOLDllVPN__263"
+    type: "vless"
+    server: "graygoat.fonixapp.org"
+    port: 45846
+    uuid: "a7c7966a-82ea-45f8-bb32-5d80e6caf320"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "17q39_glGtdUgFWkKwjxnBG0PxYkJbgt9bfkotaj7yg"
+      short-id: "ac"
+    servername: "stackoverflow.com"
+  - name: "Telegram_GOLDllVPN__264"
+    type: "vless"
+    server: "91.99.177.36"
+    port: 443
+    uuid: "77dacbb9-eb50-487e-adc7-f1f2cb4cb19c"
+    network: "ws"
+    tls: false
+    skip-cert-verify: true
+    ws-opts:
+      path: "/linkws?ed=2560"
+      headers: {"Host":"91.99.177.36"}
+  - name: "Telegram_GOLDllVPN__265"
+    type: "vless"
+    server: "silverzebra.fonixapp.org"
+    port: 28392
+    uuid: "247f264b-54dc-4e18-b55f-4769a4a80980"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "Pq_a-rDvNROjMaNtA7v2tSSsfPR8KspHwKfu2tEv_F8"
+      short-id: "cf34f84f37"
+    servername: "yelp.com"
+  - name: "Telegram_GOLDllVPN__266"
+    type: "vless"
+    server: "dwarvensniper.fonixapp.org"
+    port: 54226
+    uuid: "2c649958-a029-431a-920b-94e87ccbc715"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "Mhw0szMuy7R0U89Vm0bf-hF0DQ5pEWYdgdPF6UWLRXY"
+      short-id: "49eb"
+    servername: "yelp.com"
+  - name: "Telegram_GOLDllVPN__267"
+    type: "vless"
+    server: "tuskar.fonixapp.org"
+    port: 44393
+    uuid: "0eaab689-82c5-4678-8ac6-d58ef4357dbe"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "QRguoAi4mjGas5PjOd-JCgcAlgZTmr8tqM8VC0ZvZSM"
+      short-id: "05"
+    servername: "lowes.com"
+  - name: "Telegram_GOLDllVPN__268"
+    type: "vless"
+    server: "broodmother.fonixapp.org"
+    port: 36827
+    uuid: "88c30a4c-bc85-42d5-a5ac-38252612fd0e"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "n3DJmBTvXThSytT0NeVD64myEx7cniyCvI1T2yzZ8nc"
+      short-id: "95"
+    servername: "lowes.com"
+  - name: "Telegram_GOLDllVPN__269"
+    type: "vless"
+    server: "shadowshaman.fonixapp.org"
+    port: 50151
+    uuid: "840ae376-483b-48d5-bc49-22b0769b5860"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "4U5Q1I9IVS4086blx7Zgo7tnq2-B5V1ARtpNinTcjHY"
+      short-id: "de1e92"
+    servername: "steampowered.com"
+  - name: "Telegram_GOLDllVPN__270"
+    type: "vless"
+    server: "94.232.247.61"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__271"
+    type: "vless"
+    server: "198.41.223.140"
+    port: 443
+    uuid: "f64bdc57-0f54-4705-bf75-cfd646d98c06"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/?ed=2048Join---"
+      headers: {"Host":"snippets.nneko.netlib.re"}
+    servername: "snippets.nneko.netlib.re"
+  - name: "Telegram_GOLDllVPN__272"
+    type: "vless"
+    server: "162.159.152.53"
+    port: 443
+    uuid: "29187857-4a1f-4d1e-88eb-0016771e0dbb"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"162.159.152.53"}
+    servername: "vless.hubp.de"
+    alpn:
+      - "h3"
+  - name: "Telegram_GOLDllVPN__273"
+    type: "vless"
+    server: "104.18.82.55"
+    port: 443
+    uuid: "29187857-4a1f-4d1e-88eb-0016771e0dbb"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"104.18.82.55"}
+    servername: "vless.hubp.de"
+    alpn:
+      - "h3"
+  - name: "Telegram_GOLDllVPN__274"
+    type: "vless"
+    server: "8.39.125.194"
+    port: 443
+    uuid: "f64bdc57-0f54-4705-bf75-cfd646d98c06"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/?ed=2048J_T"
+      headers: {"Host":"snippets.nneko.netlib.re"}
+    servername: "snippets.nneko.netlib.re"
+  - name: "Telegram_GOLDllVPN__275"
+    type: "vless"
+    server: "185.176.24.61"
+    port: 2096
+    uuid: "12345678-1234-1234-1234-123456789123"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/snippets"
+      headers: {"Host":"vless.hubp.de"}
+    servername: "vless.hubp.de"
+  - name: "Telegram_GOLDllVPN__276"
+    type: "vless"
+    server: "173.245.58.113"
+    port: 443
+    uuid: "f64bdc57-0f54-4705-bf75-cfd646d98c06"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/?ed=2048Join---A"
+      headers: {"Host":"snippets.nneko.netlib.re"}
+    servername: "snippets.nneko.netlib.re"
+  - name: "Telegram_GOLDllVPN__277"
+    type: "vless"
+    server: "104.18.82.55"
+    port: 443
+    uuid: "29187857-4a1f-4d1e-88eb-0016771e0dbb"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/?ed=Join---_---T?ed=512"
+      headers: {"Host":"vless.hubp.de"}
+    servername: "vless.hubp.de"
+    alpn:
+      - "h3"
+  - name: "Telegram_GOLDllVPN__278"
+    type: "vless"
+    server: "8.39.125.85"
+    port: 443
+    uuid: "f64bdc57-0f54-4705-bf75-cfd646d98c06"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/?ed=2048J--_T"
+      headers: {"Host":"snippets.nneko.netlib.re"}
+    servername: "snippets.nneko.netlib.re"
+  - name: "Telegram_GOLDllVPN__279"
+    type: "vless"
+    server: "104.18.82.55"
+    port: 443
+    uuid: "29187857-4a1f-4d1e-88eb-0016771e0dbb"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/?ed=2560"
+      headers: {"Host":"104.18.82.55"}
+    servername: "vless.hubp.de"
+    alpn:
+      - "h3"
+  - name: "Telegram_GOLDllVPN__280"
+    type: "vless"
+    server: "198.41.223.140"
+    port: 443
+    uuid: "f64bdc57-0f54-4705-bf75-cfd646d98c06"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/?ed=2048_T"
+      headers: {"Host":"snippets.nneko.netlib.re"}
+    servername: "snippets.nneko.netlib.re"
+  - name: "Telegram_GOLDllVPN__281"
+    type: "vless"
+    server: "198.41.223.140"
+    port: 443
+    uuid: "f64bdc57-0f54-4705-bf75-cfd646d98c06"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/?ed=2048"
+      headers: {"Host":"198.41.223.140"}
+    servername: "snippets.nneko.netlib.re"
+  - name: "Telegram_GOLDllVPN__282"
+    type: "vless"
+    server: "185.143.232.224"
+    port: 80
+    uuid: "53fff6cc-b4ec-43e8-ade5-e0c42972fc33"
+    network: "ws"
+    tls: false
+    skip-cert-verify: true
+    ws-opts:
+      path: "/news"
+      headers: {"Host":"bama.ir.german.cdnir.org"}
+  - name: "Telegram_GOLDllVPN__283"
+    type: "vless"
+    server: "www.speedtest.net"
+    port: 443
+    uuid: "43865da0-f9b9-4a19-8160-90c1c2a785e3"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"smart.otterglobalconf.org"}
+    servername: "smart.otterglobalconf.org"
+  - name: "Telegram_GOLDllVPN__284"
+    type: "vless"
+    server: "91.98.144.35"
+    port: 2021
+    uuid: "24642aba-9ac9-a300-1c94-5d417d79a736"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: "telekom.com"
+    reality-opts:
+      public-key: "IdgYdnSXaE15ASlBDisYvm9YM2b_T5CYZh1zI9HXNgw"
+      short-id: "e31acf629f3850de"
+    servername: "telekom.com"
+  - name: "Telegram_GOLDllVPN__285"
+    type: "vless"
+    server: "104.21.224.5"
+    port: 2096
+    uuid: "f61a4285-7264-4d07-9408-7b9ba1922c26"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"104.21.224.5"}
+    servername: "gaosir.unfeeling.sbs"
+  - name: "Telegram_GOLDllVPN__286"
+    type: "vless"
+    server: "104.18.26.90"
+    port: 2053
+    uuid: "1fcb692d-d35f-4295-bbc5-0512f51a3c41"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/containers/de"
+      headers: {"Host":"om3.omidsuccess.uk"}
+    servername: "om3.omidsuccess.uk"
+  - name: "Telegram_GOLDllVPN__287"
+    type: "vless"
+    server: "www.speedtest.net"
+    port: 443
+    uuid: "88538870-5626-4cd7-9cda-1e0b6253c9ce"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"havij.apps724.site"}
+    servername: "havij.apps724.site"
+  - name: "Telegram_GOLDllVPN__288"
+    type: "vless"
+    server: "51.79.103.117"
+    port: 443
+    uuid: "2e6037b9-87b2-4442-91f9-71c41a586a55"
+    network: "ws"
+    tls: false
+    skip-cert-verify: true
+    ws-opts:
+      path: "/linkws?ed"
+      headers: {"Host":"51.79.103.117"}
+  - name: "Telegram_GOLDllVPN__289"
+    type: "vless"
+    server: "51.79.103.117"
+    port: 443
+    uuid: "2e6037b9-87b2-4442-91f9-71c41a586a55"
+    network: "ws"
+    tls: false
+    skip-cert-verify: true
+    ws-opts:
+      path: "/linkws?ed=2560"
+      headers: {"Host":"51.79.103.117"}
+  - name: "Telegram_GOLDllVPN__290"
+    type: "vless"
+    server: "77.73.232.61"
+    port: 19747
+    uuid: "2a9ed01e-5455-44b4-a66a-76ee8165f0ac"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM"
+      short-id: "2001"
+    servername: "yahoo.com"
+  - name: "Telegram_GOLDllVPN__291"
+    type: "vless"
+    server: "3.36.16.188"
+    port: 443
+    uuid: "4c26ebc3-7784-46d8-b52a-7b0ccae6f4b4"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "TGlPtfVzGIVpMauPRMGJj2Uu6GUiCpu5ZizIIjw-wx4"
+      short-id: "f5"
+    servername: "chatgpt.com"
+  - name: "Telegram_GOLDllVPN__292"
+    type: "vless"
+    server: "62.60.177.167"
+    port: 443
+    uuid: "6670529b-265a-4ee9-b944-bdaee2638ef2"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "uI6NV8Mkk7kf864izhLcAnk6nVDH6cE-_5HRJwMQGXs"
+      short-id: "0ea9a621ae03e231"
+    servername: "st.ozone.ru"
+  - name: "Telegram_GOLDllVPN__293"
+    type: "vless"
+    server: "8.39.125.194"
+    port: 443
+    uuid: "f64bdc57-0f54-4705-bf75-cfd646d98c06"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/?ed=2048J_T"
+      headers: {"Host":"snippets.nneko.netlib.re"}
+    servername: "snippets.nneko.netlib.re"
+  - name: "Telegram_GOLDllVPN__294"
+    type: "vless"
+    server: "159.246.55.253"
+    port: 2096
+    uuid: "f61a4285-7264-4d07-9408-7b9ba1922c26"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"159.246.55.253"}
+    servername: "gaosir.unfeeling.sbs"
+  - name: "Telegram_GOLDllVPN__295"
+    type: "vless"
+    server: "159.246.55.253"
+    port: 2096
+    uuid: "f61a4285-7264-4d07-9408-7b9ba1922c26"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/Telegram🇨🇳+@WangCai2+/?ed=2560"
+      headers: {"Host":"gaosir.unfeeling.sbs"}
+    servername: "gaosir.unfeeling.sbs"
+  - name: "Telegram_GOLDllVPN__296"
+    type: "vless"
+    server: "159.246.55.253"
+    port: 2096
+    uuid: "f61a4285-7264-4d07-9408-7b9ba1922c26"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"gaosir.unfeeling.sbs"}
+    servername: "gaosir.unfeeling.sbs"
+  - name: "Telegram_GOLDllVPN__297"
+    type: "vless"
+    server: "94.131.110.117"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__298"
+    type: "vless"
+    server: "40.160.4.106"
+    port: 8080
+    uuid: "9dc11620-987c-4344-9088-f46fdfae4054"
+    network: "ws"
+    tls: false
+    skip-cert-verify: true
+    ws-opts:
+      path: "/?ed"
+      headers: {"Host":"40.160.4.106"}
+  - name: "Telegram_GOLDllVPN__299"
+    type: "vless"
+    server: "107.174.20.100"
+    port: 56359
+    uuid: "d24a97cb-4e23-4d04-ba89-de8da04c7095"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "Telegram_GOLDllVPN__300"
+    type: "vless"
+    server: "38.47.176.134"
+    port: 59967
+    uuid: "a19fd311-c343-4b54-9ca3-fe6dcd84c0fc"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "Telegram_GOLDllVPN__301"
+    type: "vless"
+    server: "205.233.181.240"
+    port: 2096
+    uuid: "9f70b695-3579-438c-a2c7-b248ddd03656"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "X@节点狂魔/?ed=2560"
+      headers: {"Host":"cmedget.cecd.top"}
+    servername: "cmedget.cecd.top"
+  - name: "Telegram_GOLDllVPN__302"
+    type: "vless"
+    server: "5.42.220.253"
+    port: 8443
+    uuid: "f61a4285-7264-4d07-9408-7b9ba1922c26"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/x@节点狂魔"
+      headers: {"Host":"5.42.220.253"}
+    servername: "gaosir.unfeeling.sbs"
+  - name: "Telegram_GOLDllVPN__303"
+    type: "vless"
+    server: "216.133.149.139"
+    port: 23581
+    uuid: "b5471668-94dc-4ea5-ae97-3bb9dabcd2a9"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "EOYTqph-go2SazIPcSDl5pJGNyOnrR0mWaL8Tc_paEM"
+    servername: "www.cloudflare.com"
+  - name: "Telegram_GOLDllVPN__304"
+    type: "vless"
+    server: "91.98.169.122"
+    port: 443
+    uuid: "6967a7f2-e8a7-497e-f72e-c989e9f896d7"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__305"
+    type: "vless"
+    server: "91.107.157.29"
+    port: 49507
+    uuid: "7bfca5ab-4ef9-4c84-8888-e19d3995a2a0"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "Telegram_GOLDllVPN__306"
+    type: "vless"
+    server: "166.62.104.253"
+    port: 2096
+    uuid: "7556317c-dff6-46e8-ad29-b408f2a6456e"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"166.62.104.253"}
+    servername: "vless.muzheng.top"
+  - name: "Telegram_GOLDllVPN__307"
+    type: "vless"
+    server: "194.34.236.240"
+    port: 443
+    uuid: "5713fee0-2f51-4453-9502-b7fd38a657b6"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "jSx3_X_tBAcNgp7SrKSfZnr5WN0cTN2ShEJv4rHceQU"
+    servername: "www.microsoft.com"
+  - name: "Telegram_GOLDllVPN__308"
+    type: "vless"
+    server: "172.86.68.62"
+    port: 53165
+    uuid: "fa8a5091-2238-46f5-9f9c-c1f6919aa0e8"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "o9r6hlP0kA0PjOnp8ASkZhx4GjJNpjZk1yXT0_RUMic"
+      short-id: "469d62ce"
+    servername: "www.google.com"
+  - name: "Telegram_GOLDllVPN__309"
+    type: "vless"
+    server: "104.21.224.5"
+    port: 2096
+    uuid: "f61a4285-7264-4d07-9408-7b9ba1922c26"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"104.21.224.5"}
+    servername: "gaosir.unfeeling.sbs"
+  - name: "Telegram_GOLDllVPN__310"
+    type: "vless"
+    server: "172.66.47.156"
+    port: 443
+    uuid: "89b3cbba-e6ac-485a-9481-976a0415eab9"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"172.66.47.156"}
+    servername: "wwW.oPEnsIGnAL.cOM.naynay09.Dynv6.nET"
+  - name: "Telegram_GOLDllVPN__311"
+    type: "vless"
+    server: "121.127.37.173"
+    port: 443
+    uuid: "5713fee0-2f51-4453-9502-b7fd38a657b6"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "jSx3_X_tBAcNgp7SrKSfZnr5WN0cTN2ShEJv4rHceQU"
+    servername: "www.microsoft.com"
+  - name: "Telegram_GOLDllVPN__312"
+    type: "vless"
+    server: "95.134.130.68"
+    port: 53132
+    uuid: "4e060f72-a929-4cf9-a797-e06c42669722"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "Telegram_GOLDllVPN__313"
+    type: "vless"
+    server: "5.42.220.253"
+    port: 8443
+    uuid: "f61a4285-7264-4d07-9408-7b9ba1922c26"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"5.42.220.253"}
+    servername: "gaosir.unfeeling.sbs"
+  - name: "Telegram_GOLDllVPN__314"
+    type: "vless"
+    server: "159.246.55.253"
+    port: 2096
+    uuid: "f61a4285-7264-4d07-9408-7b9ba1922c26"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"159.246.55.253"}
+    servername: "gaosir.unfeeling.sbs"
+  - name: "Telegram_GOLDllVPN__315"
+    type: "vless"
+    server: "212.95.34.97"
+    port: 21551
+    uuid: "3f8cac1e-b25a-4254-866d-3c2f8ca3b2dd"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "Telegram_GOLDllVPN__316"
+    type: "vless"
+    server: "46.21.157.186"
+    port: 443
+    uuid: "5713fee0-2f51-4453-9502-b7fd38a657b6"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "jSx3_X_tBAcNgp7SrKSfZnr5WN0cTN2ShEJv4rHceQU"
+    servername: "www.microsoft.com"
+  - name: "Telegram_GOLDllVPN__317"
+    type: "vless"
+    server: "104.21.224.5"
+    port: 2096
+    uuid: "f61a4285-7264-4d07-9408-7b9ba1922c26"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"104.21.224.5"}
+    servername: "gaosir.unfeeling.sbs"
+  - name: "Telegram_GOLDllVPN__318"
+    type: "vless"
+    server: "166.62.104.253"
+    port: 2096
+    uuid: "7556317c-dff6-46e8-ad29-b408f2a6456e"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"166.62.104.253"}
+    servername: "vless.muzheng.top"
+  - name: "Telegram_GOLDllVPN__319"
+    type: "vless"
+    server: "159.246.55.253"
+    port: 2096
+    uuid: "f61a4285-7264-4d07-9408-7b9ba1922c26"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/Telegram🇨🇳+@WangCai2+/?ed=2560"
+      headers: {"Host":"gaosir.unfeeling.sbs"}
+    servername: "gaosir.unfeeling.sbs"
+  - name: "Telegram_GOLDllVPN__320"
+    type: "vless"
+    server: "5.75.206.165"
+    port: 8443
+    uuid: "a43c4b2a-6203-4216-bd85-0a99afffad15"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "Telegram_GOLDllVPN__321"
+    type: "vless"
+    server: "www.speedtest.net"
+    port: 443
+    uuid: "88538870-5626-4cd7-9cda-1e0b6253c9ce"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"www.speedtest.net"}
+    servername: "angor.mrconfigur.site"
+  - name: "Telegram_GOLDllVPN__322"
+    type: "vless"
+    server: "172.66.47.156"
+    port: 443
+    uuid: "89b3cbba-e6ac-485a-9481-976a0415eab9"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"172.66.47.156"}
+    servername: "wwW.oPEnsIGnAL.cOM.naynay09.Dynv6.nET"
+  - name: "Telegram_GOLDllVPN__323"
+    type: "vless"
+    server: "157.180.29.25"
+    port: 18423
+    uuid: "a8ef99ba-872f-4a3a-87d8-6cc29c63521c"
+    network: "ws"
+    tls: false
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"157.180.29.25"}
+  - name: "Telegram_GOLDllVPN__324"
+    type: "vless"
+    server: "167.68.4.253"
+    port: 2096
+    uuid: "7556317c-dff6-46e8-ad29-b408f2a6456e"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"167.68.4.253"}
+    servername: "vless.muzheng.top"
+  - name: "Telegram_GOLDllVPN__325"
+    type: "vless"
+    server: "91.107.139.110"
+    port: 8880
+    uuid: "cfe554a3-4cd5-4fe1-9951-e6b65fc52a74"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__326"
+    type: "vless"
+    server: "157.180.29.25"
+    port: 24199
+    uuid: "320c06e7-7197-495a-9e66-4dbed644ff23"
+    network: "ws"
+    tls: false
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"/?TELEGRAM@JKVPN@JKVPN@JKVPNed=2048"}
+  - name: "Telegram_GOLDllVPN__327"
+    type: "vless"
+    server: "62.60.177.167"
+    port: 443
+    uuid: "6670529b-265a-4ee9-b944-bdaee2638ef2"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "uI6NV8Mkk7kf864izhLcAnk6nVDH6cE-_5HRJwMQGXs"
+      short-id: "0ea9a621ae03e231"
+    servername: "st.ozone.ru"
+  - name: "Telegram_GOLDllVPN__328"
+    type: "vless"
+    server: "159.246.55.253"
+    port: 2096
+    uuid: "f61a4285-7264-4d07-9408-7b9ba1922c26"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"159.246.55.253"}
+    servername: "gaosir.unfeeling.sbs"
+  - name: "Telegram_GOLDllVPN__329"
+    type: "vless"
+    server: "94.232.247.168"
+    port: 41360
+    uuid: "e16a35ea-6715-4e75-9845-d20358bd0876"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "TY6w1zP-qUFKVCAQdQT2ZEJsZBrPO4hZjZYBSS6h6DU"
+      short-id: "1aab45"
+    servername: "yahoo.com"
+  - name: "Telegram_GOLDllVPN__330"
+    type: "vless"
+    server: "95.179.217.208"
+    port: 8880
+    uuid: "df0680ca-e43c-498d-ed86-8e196eedd012"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Telegram_GOLDllVPN__331"
+    type: "vless"
+    server: "185.251.81.253"
+    port: 2096
+    uuid: "2456f90c-5183-476d-b069-16ae74ce120f"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/Telegram🇨🇳"
+      headers: {"Host":"fast01.0860852.xyz"}
+    servername: "fast01.0860852.xyz"
+  - name: "Telegram_GOLDllVPN__332"
+    type: "vless"
+    server: "65.109.188.4"
+    port: 33801
+    uuid: "8a49b57a-d02e-4965-a24f-b7f189cbb98d"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "Telegram_GOLDllVPN__333"
+    type: "vless"
+    server: "195.13.45.253"
+    port: 2096
+    uuid: "f61a4285-7264-4d07-9408-7b9ba1922c26"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/x @节点狂魔 /"
+      headers: {"Host":"gaosir.unfeeling.sbs"}
+    servername: "gaosir.unfeeling.sbs"
+  - name: "Telegram_GOLDllVPN__334"
+    type: "vless"
+    server: "20.235.105.146"
+    port: 443
+    uuid: "78fc9ba9-9c68-4b49-891f-ea9e38bd3b56"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/proxyip=sjc.o00o.ooo"
+      headers: {"Host":"ak.suoni.nyc.mn"}
+    servername: "ak.suoni.nyc.mn"
+  - name: "Telegram_GOLDllVPN__335"
+    type: "vless"
+    server: "20.239.233.43"
+    port: 443
+    uuid: "e258977b-e413-4718-a3af-02d75492c349"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/?ed=2560"
+      headers: {"Host":"www.x-aniu--hk.netlib.re"}
+    servername: "www.x-aniu--hk.netlib.re"
+  - name: "Telegram_GOLDllVPN__336"
+    type: "vless"
+    server: "160.16.203.210"
+    port: 443
+    uuid: "f61a4285-7264-4d07-9408-7b9ba1922c26"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/节点狂魔/?ed=2560"
+      headers: {"Host":"gaosir.unfeeling.sbs"}
+    servername: "gaosir.unfeeling.sbs"
+  - name: "Telegram_GOLDllVPN__337"
+    type: "vless"
+    server: "193.111.76.140"
+    port: 6060
+    uuid: "598277a9-a7aa-4397-affd-e1ea12e8300f"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    servername: "shop.ftmsoft.com"
+    alpn:
+      - "h2"
+      - "http/1.1"
+  - name: "Telegram_GOLDllVPN__338"
+    type: "vless"
+    server: "25.25.25.253"
+    port: 2096
+    uuid: "f61a4285-7264-4d07-9408-7b9ba1922c26"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"gaosir.unfeeling.sbs"}
+    servername: "gaosir.unfeeling.sbs"
+  - name: "Telegram_GOLDllVPN__339"
+    type: "vless"
+    server: "40.160.4.118"
+    port: 8080
+    uuid: "9dc11620-987c-4344-9088-f46fdfae4054"
+    network: "ws"
+    tls: false
+    skip-cert-verify: true
+    ws-opts:
+      path: "/?ed"
+      headers: {"Host":"40.160.4.118"}
+  - name: "Telegram_GOLDllVPN__340"
+    type: "vless"
+    server: "116.93.199.28"
+    port: 12136
+    uuid: "f61a4285-7264-4d07-9408-7b9ba1922c26"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "X@节点狂魔/?ed=2560"
+      headers: {"Host":"gaosir.unfeeling.sbs"}
+    servername: "gaosir.unfeeling.sbs"
+  - name: "Telegram_GOLDllVPN__341"
+    type: "vless"
+    server: "144.126.196.165"
+    port: 28899
+    uuid: "f61d9aee-63b8-439e-bebf-afaa53c015fd"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "UcJ-s55xl9msAtzJcBghDUTSnyilzB6d7NpUfkHoQmY"
+    servername: "s0.awsstatic.com"
+  - name: "Telegram_GOLDllVPN__342"
+    type: "vless"
+    server: "45.146.201.253"
+    port: 2096
+    uuid: "2456f90c-5183-476d-b069-16ae74ce120f"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/Telegram @sinavm /?ed=2560"
+      headers: {"Host":"fast01.0860852.xyz"}
+    servername: "fast01.0860852.xyz"
+  - name: "Telegram_GOLDllVPN__343"
+    type: "vless"
+    server: "213.176.0.80"
+    port: 222
+    uuid: "d5fed423-6123-42eb-b54f-444cda69fdfb"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "Telegram_GOLDllVPN__344"
+    type: "vless"
+    server: "64.227.93.102"
+    port: 28899
+    uuid: "f61d9aee-63b8-439e-bebf-afaa53c015fd"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "UcJ-s55xl9msAtzJcBghDUTSnyilzB6d7NpUfkHoQmY"
+    servername: "s0.awsstatic.com"
+  - name: "Telegram_GOLDllVPN__345"
+    type: "vless"
+    server: "91.107.128.126"
+    port: 8443
+    uuid: "5b9db8d4-6309-49b5-b72e-41162a81321d"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "Telegram_GOLDllVPN__346"
+    type: "vless"
+    server: "91.107.128.126"
+    port: 8443
+    uuid: "5b9db8d4-6309-49b5-b72e-41162a81321d"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "Blank_Vpn_لطفا_برای_حمایت_جوین_شید_2"
+    type: "vless"
+    server: "89.149.242.24"
+    port: 1990
+    uuid: "48490509-9672-4ddb-b44f-bbfd7560d614"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    servername: "pmeli.appleidcenteral.ir"
+    alpn:
+      - "h2"
+      - "http/1.1"
+  - name: "Blank_Vpn_لطفا_برای_حمایت_جوین_شید_3"
+    type: "vless"
+    server: "93.114.98.149"
+    port: 81
+    uuid: "ab5404ac-a004-4d28-8fbb-00db7c54d472"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "Blank_Vpn_لطفا_برای_حمایت_جوین_شید_4"
+    type: "vless"
+    server: "fnvip4.therevenant.shop"
+    port: 2053
+    uuid: "fa0c47a2-5e2c-4bdf-a651-67bd418d6691"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "Server"
+    type: "vless"
+    server: "85.133.237.216"
+    port: 443
+    uuid: "4763fe93-80db-4b99-9539-e5101b424223"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "Provider3A20"
+    type: "vless"
+    server: "85.133.237.216"
+    port: 443
+    uuid: "4763fe93-80db-4b99-9539-e5101b424223"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "یامیام_پروکسی"
+    type: "vless"
+    server: "85.133.237.216"
+    port: 443
+    uuid: "4763fe93-80db-4b99-9539-e5101b424223"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "Server_1"
+    type: "vless"
+    server: "85.133.237.216"
+    port: 443
+    uuid: "4763fe93-80db-4b99-9539-e5101b424223"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "Server_2"
+    type: "vless"
+    server: "85.133.237.216"
+    port: 443
+    uuid: "4763fe93-80db-4b99-9539-e5101b424223"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "teldrgateway_1"
+    type: "vless"
+    server: "chatgpt.com"
+    port: 443
+    uuid: "289f7608-8995-4165-9f3a-3612577190bb"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/ws"
+      headers: {"Host":"chatgpt.com"}
+    servername: "dl98.hexo-music.ir"
+  - name: "_V2RAYVlP"
+    type: "vless"
+    server: "library98.ir"
+    port: 29258
+    uuid: "9f88f219-216a-4efa-8188-29558a27ab67"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "-500GB-Join-Farsisports"
+    type: "vless"
+    server: "81.12.92.48"
+    port: 48331
+    uuid: "4068d913-4ffe-4e2a-a572-bef65fea5c7b"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "_TmeV2HUBIR_Join_Now__1"
+    type: "vless"
+    server: "188.114.98.0"
+    port: 443
+    uuid: "fef4a93d-eb4f-4657-b56b-32a0dc060045"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"dev.twistsparrow.xyz"}
+    servername: "dev.twistsparrow.xyz"
+  - name: "_TmeV2HUBIR_Join_Now__2"
+    type: "vless"
+    server: "de.jp3.ir"
+    port: 6079
+    uuid: "10204890-4bc5-404e-abb8-8161dd77d3d1"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "Ak3gZa-Tu1UK7RFZiOddKd5vbYPwZMf3jmZ9aq5Wo04"
+    servername: "www.pcmag.com"
+  - name: "_TmeV2HUBIR_Join_Now__3"
+    type: "vless"
+    server: "serveruwofl.samanidempire.org"
+    port: 443
+    uuid: "ee4b0561-450d-4f5b-a8e2-f84c95def9b2"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/1ab3537d"
+      headers: {"Host":"serveruwofl.samanidempire.org"}
+    alpn:
+      - "http/1.1"
+  - name: "_TmeV2HUBIR_Join_Now__4"
+    type: "vless"
+    server: "109.120.188.166"
+    port: 443
+    uuid: "7bc30425-1c2f-4823-b629-90f599a4cbfe"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+      short-id: "6ba85179e30d4fc2"
+    servername: "ads.x5.ru"
+  - name: "_TmeV2HUBIR_Join_Now__5"
+    type: "vless"
+    server: "nodejs.org"
+    port: 80
+    uuid: "33e1a095-1e25-4198-bfe7-ec312e4f98ee"
+    network: "ws"
+    tls: false
+    skip-cert-verify: true
+    ws-opts:
+      path: "/?ed"
+      headers: {"Host":"CREDibLe-pLaNt7ddV4jJ7et.OnEeaT.CO."}
+  - name: "_TmeV2HUBIR_Join_Now__6"
+    type: "vless"
+    server: "172.64.144.74"
+    port: 443
+    uuid: "68c89f56-3a15-46f2-9901-8c00a2546b97"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/Tel-@V2rayAlpha"
+      headers: {"Host":"rukawa.pages.dev"}
+    servername: "rukawa.pages.dev"
+  - name: "_TmeV2HUBIR_Join_Now__7"
+    type: "vless"
+    server: "chat.openai.com"
+    port: 443
+    uuid: "289f7608-8995-4165-9f3a-3612577190bb"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/ws"
+      headers: {"Host":"chat.openai.com"}
+    servername: "dl98.hexo-music.ir"
+  - name: "_TmeV2HUBIR_Join_Now__8"
+    type: "vless"
+    server: "dd.openaccessnode.com"
+    port: 504
+    uuid: "31701b5d-ca95-92f9-d684-dae3706161ea"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: "JNIR"
+    reality-opts:
+      public-key: "aNLPNNyjIC7QYLe7MpF4nxxHhO421dBSZaQgsDd1szs"
+      short-id: "1d64e9805b4f9ae3"
+    servername: "nobitex.ir"
+  - name: "v2raymeli1"
+    type: "vless"
+    server: "cfcdn.zopli.ir"
+    port: 443
+    uuid: "98d677be-b14b-4c14-a96b-4a39a3be645a"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/eyJqdW5rIjoiZHJmTGlJSmciLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+      headers: {"Host":"t86y6leiyaph7tsvb170x7vfx0-3dvh3.vrezht08.workers.dev"}
+  - name: "v2raymeli1_1"
+    type: "vless"
+    server: "cfcdn.zopli.ir"
+    port: 443
+    uuid: "98d677be-b14b-4c14-a96b-4a39a3be645a"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/eyJqdW5rIjoiZHJmTGlJSmciLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+      headers: {"Host":"t86y6leiyaph7tsvb170x7vfx0-3dvh3.vrezht08.workers.dev"}
+  - name: "Telegram_e_terafkon"
+    type: "vless"
+    server: "python.org"
+    port: 80
+    uuid: "007ef8a4-08b6-43b3-a4cd-17b8236bddf2"
+    network: "ws"
+    tls: false
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"fdsgszd.global.ssl.fastly.net"}
+  - name: "Telegram_e_terafkon_1"
+    type: "vless"
+    server: "31.43.179.0"
+    port: 2096
+    uuid: "a81596f9-680f-4fd7-928e-767fbd6a45c5"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: "uSxLC4bWX3waYJMa2Crw7"
+    servername: "a3.marandcity.com"
+    alpn:
+      - "h2"
+  - name: "Telegram_e_terafkon_2"
+    type: "vless"
+    server: "snapp.ir.www.google.com.tappsi.ir.digikala.ir.1.1.1.1.iranfilmbartar.com.mci.ir.iranfilmbartar.com"
+    port: 8443
+    uuid: "a81596f9-680f-4fd7-928e-767fbd6a45c5"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: "uSxLC4bWX3waYJMa2Crw7"
+    servername: "a3.marandcity.com"
+    alpn:
+      - "h2"
+  - name: "Telegram_e_terafkon_3"
+    type: "vless"
+    server: "dir4.serviceali.ir"
+    port: 2096
+    uuid: "a81596f9-680f-4fd7-928e-767fbd6a45c5"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: "uSxLC4bWX3waYJMa2Crw7"
+    servername: "a3.marandcity.com"
+    alpn:
+      - "h2"
+  - name: "Telegram_e_terafkon_4"
+    type: "vless"
+    server: "dir4.serviceali.ir"
+    port: 8443
+    uuid: "a81596f9-680f-4fd7-928e-767fbd6a45c5"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: "uSxLC4bWX3waYJMa2Crw7"
+    servername: "a3.marandcity.com"
+    alpn:
+      - "h2"
+  - name: "Telegram_e_terafkon_5"
+    type: "vless"
+    server: "31.43.179.0"
+    port: 8443
+    uuid: "a81596f9-680f-4fd7-928e-767fbd6a45c5"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: "uSxLC4bWX3waYJMa2Crw7"
+    servername: "a3.marandcity.com"
+    alpn:
+      - "h2"
+  - name: "v2raymeli1_2"
+    type: "vless"
+    server: "cfcdn.zopli.ir"
+    port: 443
+    uuid: "98d677be-b14b-4c14-a96b-4a39a3be645a"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/eyJqdW5rIjoiZHJmTGlJSmciLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+      headers: {"Host":"t86y6leiyaph7tsvb170x7vfx0-3dvh3.vrezht08.workers.dev"}
+  - name: "v2raymeli1_3"
+    type: "vless"
+    server: "cfcdn.zopli.ir"
+    port: 443
+    uuid: "98d677be-b14b-4c14-a96b-4a39a3be645a"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/eyJqdW5rIjoiZHJmTGlJSmciLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+      headers: {"Host":"t86y6leiyaph7tsvb170x7vfx0-3dvh3.vrezht08.workers.dev"}
+  - name: "telegram_config7land_1"
+    type: "vless"
+    server: "ip.hamrahto.com"
+    port: 8443
+    uuid: "273f7148-0f37-45ae-8283-5132f7f48006"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"hm3.mutee.com.tr"}
+    servername: "hm3.mutee.com.tr"
+  - name: "confegraigan_نت_ملی_102"
+    type: "vless"
+    server: "snapp.ir.www.google.com.tappsi.ir.digikala.ir.1.1.1.1.iranfilmbartar.com.mci.ir.iranfilmbartar.com"
+    port: 8443
+    uuid: "a81596f9-680f-4fd7-928e-767fbd6a45c5"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: "uSxLC4bWX3waYJMa2Crw7"
+    servername: "a3.marandcity.com"
+    alpn:
+      - "h2"
+  - name: "confegraigan_نت_ملی_101"
+    type: "vless"
+    server: "31.43.179.0"
+    port: 2096
+    uuid: "a81596f9-680f-4fd7-928e-767fbd6a45c5"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: "uSxLC4bWX3waYJMa2Crw7"
+    servername: "a3.marandcity.com"
+    alpn:
+      - "h2"
+  - name: "v2raymeli1_4"
+    type: "vless"
+    server: "cfcdn.zopli.ir"
+    port: 443
+    uuid: "98d677be-b14b-4c14-a96b-4a39a3be645a"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/eyJqdW5rIjoiZHJmTGlJSmciLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+      headers: {"Host":"t86y6leiyaph7tsvb170x7vfx0-3dvh3.vrezht08.workers.dev"}
+  - name: "HajmVPN_Config_"
+    type: "vless"
+    server: "FI.sattarlink.online"
+    port: 6664
+    uuid: "ff734a9e-63a9-4916-b0d1-e757042b1c6f"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "RSnbrHpLJYL8AtxWie8gbcnfs68h9rHAZX-gS3EQtSM"
+      short-id: "c3b6ed4da7a983c7"
+    servername: "tgju.org"
+  - name: "HajmVPN_Config__1"
+    type: "vless"
+    server: "FI.sattarlink.online"
+    port: 6664
+    uuid: "ff734a9e-63a9-4916-b0d1-e757042b1c6f"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "RSnbrHpLJYL8AtxWie8gbcnfs68h9rHAZX-gS3EQtSM"
+      short-id: "c3b6ed4da7a983c7"
+    servername: "tgju.org"
+  - name: "JoinConfigV2rayy_کانفیگ_رایگان_2"
+    type: "vless"
+    server: "162.159.7.198"
+    port: 443
+    uuid: "e7a9fe3b-c10f-4a67-8f7b-e22c9c246d8d"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/?ed"
+      headers: {"Host":"germany.pahlevancompani.com"}
+    servername: "germany.pahlevancompani.com"
+    alpn:
+      - "http/1.1"
+  - name: "JoinConfigV2rayy_کانفیگ_رایگان_3"
+    type: "vless"
+    server: "ak2.vpnfreedom.tech"
+    port: 443
+    uuid: "4af37467-bf79-4630-98d5-73e7dad60e90"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "l0saUZNgojrR6PjhL_fMHEBZlZ2TJypjRdQyy2mrFFI"
+      short-id: "58"
+    servername: "google.com"
+  - name: "JoinConfigV2rayy_کانفیگ_رایگان_4"
+    type: "vless"
+    server: "104.20.1.252"
+    port: 80
+    uuid: "ba2bb9d8-9baa-45d6-9e0a-38c9cb6a6a9a"
+    network: "ws"
+    tls: false
+    skip-cert-verify: true
+    ws-opts:
+      path: "/?ed"
+      headers: {"Host":"WeaK-preSSUrE3Ga6bzof92.sPorTlaNd.coMPANY."}
+  - name: "JoinConfigV2rayy_کانفیگ_رایگان_5"
+    type: "vless"
+    server: "188.114.98.0"
+    port: 443
+    uuid: "fef4a93d-eb4f-4657-b56b-32a0dc060045"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"dev.twistsparrow.xyz"}
+    servername: "dev.twistsparrow.xyz"
+  - name: "JoinConfigV2rayy_کانفیگ_رایگان_6"
+    type: "vless"
+    server: "46.246.98.74"
+    port: 443
+    uuid: "95e118b4-4352-4218-8493-f20cc7fc467a"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "nBJICh1KzfMblaXtSxpTiPIHGg2TKP5PF8nq-89Q6jg"
+      short-id: "6ed3324b"
+    servername: "learn.microsoft.com"
+  - name: "JoinConfigV2rayy_کانفیگ_رایگان_7"
+    type: "vless"
+    server: "57.129.49.1"
+    port: 23576
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
+    servername: "fuck.rkn"
+  - name: "JoinConfigV2rayy_کانفیگ_رایگان_8"
+    type: "vless"
+    server: "64.188.104.168"
+    port: 40721
+    uuid: "bf3e8944-8d26-47de-8748-b9aa74cce974"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "TUZgwzcTvoROSbgnqMh3WorXVMxQNIF2zsEM39FQbyk"
+      short-id: "df8611c07d"
+    servername: "yahoo.com"
+  - name: "Channel"
+    type: "vless"
+    server: "104.20.1.252"
+    port: 80
+    uuid: "ba2bb9d8-9baa-45d6-9e0a-38c9cb6a6a9a"
+    network: "ws"
+    tls: false
+    skip-cert-verify: true
+    ws-opts:
+      path: "/?ed"
+      headers: {"Host":"WeaK-preSSUrE3Ga6bzof92.sPorTlaNd.coMPANY."}
+  - name: "_کانال_ما_V2ray_ARVIN0"
+    type: "vless"
+    server: "FI.sattarlink.online"
+    port: 6664
+    uuid: "ff734a9e-63a9-4916-b0d1-e757042b1c6f"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "RSnbrHpLJYL8AtxWie8gbcnfs68h9rHAZX-gS3EQtSM"
+      short-id: "c3b6ed4da7a983c7"
+    servername: "tgju.org"
+  - name: "GhostVPNStore_جویین_بدهههه"
+    type: "vless"
+    server: "chat.openai.com"
+    port: 443
+    uuid: "289f7608-8995-4165-9f3a-3612577190bb"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/ws"
+      headers: {"Host":"chat.openai.com"}
+    servername: "dl98.hexo-music.ir"
+  - name: "IranProxyPlus"
+    type: "vless"
+    server: "mkh.v2plus.ovh"
+    port: 2053
+    uuid: "70c68fef-30a5-4429-b60d-d1570cc253b3"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "?ed=2048"
+      headers: {"Host":"pcHsjVEZzoOuScs.rz0045er.ir."}
+    servername: "pass24uture.rz0045er.ir"
+    alpn:
+      - "h2"
+      - "http/1.1"
+  - name: "httpstmekanfek_v2_2"
+    type: "vless"
+    server: "s3-d8.hmvpa.ir"
+    port: 2082
+    uuid: "e9cf6728-cb1e-486e-a492-22d7c46be078"
+    network: "ws"
+    tls: false
+    skip-cert-verify: true
+    ws-opts:
+      path: "/api/stream?ed=2080"
+      headers: {"Host":"rus3-d8.hmvpa.ir"}
+  - name: "Biavaslim20F09F8C9920"
+    type: "vless"
+    server: "library98.ir"
+    port: 38759
+    uuid: "9cb2b14f-cb4a-4ceb-a0ac-3a46f56d8545"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "Biavaslim"
+    type: "vless"
+    server: "kh.bishtaraz33kilo.top"
+    port: 8080
+    uuid: "055b280c-d130-402d-91c8-fde274452ad7"
+    network: "ws"
+    tls: false
+    skip-cert-verify: true
+    ws-opts:
+      path: "/test"
+      headers: {"Host":"kh.bishtaraz33kilo.top"}
+  - name: "Biavaslim_1"
+    type: "vless"
+    server: "mitivpndozd.global.ssl.fastly.net"
+    port: 443
+    uuid: "4ee73e0b-0d09-4a06-9619-8a5d0d3d8257"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/containers/fi"
+      headers: {"Host":"mitivpndozd.global.ssl.fastly.net"}
+    servername: "mitivpndozd.global.ssl.fastly.net"
+    alpn:
+      - "http/1.1"
+  - name: "Biavaslim_2"
+    type: "vless"
+    server: "85.133.237.216"
+    port: 443
+    uuid: "4763fe93-80db-4b99-9539-e5101b424223"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "Biavaslim_3"
+    type: "vless"
+    server: "vipde2.persianhostnet.ir"
+    port: 9091
+    uuid: "d6637de9-6df6-4e14-b6c2-9f32df6d5c79"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "Biavaslim_4"
+    type: "vless"
+    server: "85.133.237.216"
+    port: 443
+    uuid: "4763fe93-80db-4b99-9539-e5101b424223"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "Biavaslim_5"
+    type: "vless"
+    server: "vipde1.persianhostnet.ir"
+    port: 9091
+    uuid: "d6637de9-6df6-4e14-b6c2-9f32df6d5c79"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "Biavaslim_6"
+    type: "vless"
+    server: "mitivpndozd.global.ssl.fastly.net"
+    port: 443
+    uuid: "4ee73e0b-0d09-4a06-9619-8a5d0d3d8257"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/containers/fi"
+      headers: {"Host":"mitivpndozd.global.ssl.fastly.net"}
+    servername: "mitivpndozd.global.ssl.fastly.net"
+    alpn:
+      - "http/1.1"
+  - name: "teldrgateway_2"
+    type: "vless"
+    server: "cfcdn.zopli.ir"
+    port: 443
+    uuid: "98d677be-b14b-4c14-a96b-4a39a3be645a"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/eyJqdW5rIjoiZHJmTGlJSmciLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560"
+      headers: {"Host":"t86y6leiyaph7tsvb170x7vfx0-3dvh3.vrezht08.workers.dev"}
+    servername: "t86y6leiyaph7tsvb170x7vfx0-3dvh3.vrezht08.workers.dev"
+    alpn:
+      - "http/1.1"
+  - name: "teldrgateway_3"
+    type: "vless"
+    server: "108.162.198.154"
+    port: 443
+    uuid: "d89d6641-3b1a-4f51-a194-9c9109fd21b6"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/Tel-@V2rayAlpha"
+      headers: {"Host":"diprox.pages.dev"}
+    servername: "DiprOX.pages.DEV"
+  - name: "rendvpn_4"
+    type: "vless"
+    server: "dojman.global.ssl.fastly.net"
+    port: 443
+    uuid: "36213657-e751-478b-a5d7-547eef892af9"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/containers/fi"
+      headers: {"Host":"dojman.global.ssl.fastly.net"}
+    servername: "dojman.global.ssl.fastly.net"
+    alpn:
+      - "http/1.1"
+  - name: "rendvpn_5"
+    type: "vless"
+    server: "mitivpndozd.global.ssl.fastly.net"
+    port: 443
+    uuid: "4ee73e0b-0d09-4a06-9619-8a5d0d3d8257"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/containers/fi"
+      headers: {"Host":"mitivpndozd.global.ssl.fastly.net"}
+    servername: "mitivpndozd.global.ssl.fastly.net"
+    alpn:
+      - "http/1.1"
+  - name: "rendvpn_6"
+    type: "vless"
+    server: "fa.faraz360.ir"
+    port: 9829
+    uuid: "0c0870b0-a253-4861-84b6-e6ce6777e97c"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "rendvpn_7"
+    type: "vless"
+    server: "104.26.6.35"
+    port: 80
+    uuid: "c33275fd-a4fa-470d-90e4-55da39d849a8"
+    network: "ws"
+    tls: false
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"de.tawana.cf.panbehpanel.ir"}
+  - name: "rendvpn_8"
+    type: "vless"
+    server: "144.31.198.228"
+    port: 56328
+    uuid: "7ccaae6a-8903-46c0-8de1-2b7dd5f3c1fb"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "ZXQHrp-dR_PEUhgjvfB3XhJU776SCjz5NPOezK-nvkk"
+      short-id: "7cab038f"
+    servername: "canva.com"
+  - name: "rendvpn_9"
+    type: "vless"
+    server: "94.184.17.221"
+    port: 2082
+    uuid: "0a89f56d-b027-413a-9a8f-0eb507e157c7"
+    network: "ws"
+    tls: false
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"94.184.17.221"}
+  - name: "rendvpn_10"
+    type: "vless"
+    server: "109.176.229.97"
+    port: 8443
+    uuid: "f0f7551e-32f2-420f-a1bd-6d3d77e096a6"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "LHlFdzprRH3N8OxZK5WrGSu5vtr0_fu6iLzHAFNt9AM"
+      short-id: "1f"
+    servername: "tgju.org"
+  - name: "rendvpn_11"
+    type: "vless"
+    server: "faqatchai.global.ssl.fastly.net"
+    port: 443
+    uuid: "a9bac46a-2037-4ad1-a192-08c70927f4ad"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/containers/fi"
+      headers: {"Host":"faqatchai.global.ssl.fastly.net"}
+    servername: "faqatchai.global.ssl.fastly.net"
+    alpn:
+      - "http/1.1"
+  - name: "rendvpn_12"
+    type: "vless"
+    server: "85.133.197.237"
+    port: 9829
+    uuid: "0c0870b0-a253-4861-84b6-e6ce6777e97c"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "rendvpn_13"
+    type: "vless"
+    server: "hidden.play98.ir"
+    port: 49787
+    uuid: "07a1b1f0-d925-422e-b646-f82f3fbaf5f0"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "rendvpn_14"
+    type: "vless"
+    server: "dojman.global.ssl.fastly.net"
+    port: 443
+    uuid: "36213657-e751-478b-a5d7-547eef892af9"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/containers/fi"
+      headers: {"Host":"dojman.global.ssl.fastly.net"}
+    servername: "dojman.global.ssl.fastly.net"
+    alpn:
+      - "http/1.1"
+  - name: "rendvpn_15"
+    type: "vless"
+    server: "mitivpndozd.global.ssl.fastly.net"
+    port: 443
+    uuid: "4ee73e0b-0d09-4a06-9619-8a5d0d3d8257"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/containers/fi"
+      headers: {"Host":"mitivpndozd.global.ssl.fastly.net"}
+    servername: "mitivpndozd.global.ssl.fastly.net"
+    alpn:
+      - "http/1.1"
+  - name: "rendvpn_16"
+    type: "vless"
+    server: "fa.faraz360.ir"
+    port: 9829
+    uuid: "0c0870b0-a253-4861-84b6-e6ce6777e97c"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "rendvpn_17"
+    type: "vless"
+    server: "104.26.6.35"
+    port: 80
+    uuid: "c33275fd-a4fa-470d-90e4-55da39d849a8"
+    network: "ws"
+    tls: false
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"de.tawana.cf.panbehpanel.ir"}
+  - name: "rendvpn_18"
+    type: "vless"
+    server: "144.31.198.228"
+    port: 56328
+    uuid: "7ccaae6a-8903-46c0-8de1-2b7dd5f3c1fb"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "ZXQHrp-dR_PEUhgjvfB3XhJU776SCjz5NPOezK-nvkk"
+      short-id: "7cab038f"
+    servername: "canva.com"
+  - name: "rendvpn_19"
+    type: "vless"
+    server: "94.184.17.221"
+    port: 2082
+    uuid: "0a89f56d-b027-413a-9a8f-0eb507e157c7"
+    network: "ws"
+    tls: false
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"94.184.17.221"}
+  - name: "rendvpn_20"
+    type: "vless"
+    server: "109.176.229.97"
+    port: 8443
+    uuid: "f0f7551e-32f2-420f-a1bd-6d3d77e096a6"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "LHlFdzprRH3N8OxZK5WrGSu5vtr0_fu6iLzHAFNt9AM"
+      short-id: "1f"
+    servername: "tgju.org"
+  - name: "rendvpn_21"
+    type: "vless"
+    server: "faqatchai.global.ssl.fastly.net"
+    port: 443
+    uuid: "a9bac46a-2037-4ad1-a192-08c70927f4ad"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/containers/fi"
+      headers: {"Host":"faqatchai.global.ssl.fastly.net"}
+    servername: "faqatchai.global.ssl.fastly.net"
+    alpn:
+      - "http/1.1"
+  - name: "rendvpn_22"
+    type: "vless"
+    server: "85.133.197.237"
+    port: 9829
+    uuid: "0c0870b0-a253-4861-84b6-e6ce6777e97c"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "rendvpn_23"
+    type: "vless"
+    server: "hidden.play98.ir"
+    port: 49787
+    uuid: "07a1b1f0-d925-422e-b646-f82f3fbaf5f0"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "teldrgateway_4"
+    type: "vless"
+    server: "chatgpt.com"
+    port: 443
+    uuid: "289f7608-8995-4165-9f3a-3612577190bb"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/ws"
+      headers: {"Host":"chatgpt.com"}
+    servername: "dl98.hexo-music.ir"
+  - name: "SPARTAN_YT_قطع_شد_بیا_چنل_جدید_میزارم"
+    type: "vless"
+    server: "188.0.247.26"
+    port: 64604
+    uuid: "a045adda-3023-358d-af8d-ef91f7a14e32"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "Server_3"
+    type: "vless"
+    server: "104.19.140.106"
+    port: 443
+    uuid: "bcce095a-9f98-4e23-a68c-8bbecb785dcd"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/213.35.100.31=47112"
+      headers: {"Host":"afrcloud1.c01.kr"}
+    servername: "afrcloud1.c01.kr"
+  - name: "SPARTAN_YT_قطع_شد_بیا_چنل_جدید_میزارم_1"
+    type: "vless"
+    server: "188.0.247.26"
+    port: 64604
+    uuid: "a045adda-3023-358d-af8d-ef91f7a14e32"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "_کانال_ما_V2ray_ARVIN0_1"
+    type: "vless"
+    server: "45.82.251.208"
+    port: 8880
+    uuid: "8dc7722c-2767-4eea-a28b-2f8daacc07e3"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "Farsisports"
+    type: "vless"
+    server: "kirinet.global.ssl.fastly.net"
+    port: 443
+    uuid: "36213657-e751-478b-a5d7-547eef892af9"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/containers/fi"
+      headers: {"Host":"kirinet.global.ssl.fastly.net"}
+    servername: "kirinet.global.ssl.fastly.net"
+    alpn:
+      - "http/1.1"
+  - name: "Telegram_vpnv2ray_rayegan"
+    type: "vless"
+    server: "172.67.175.120"
+    port: 443
+    uuid: "4b81acdf-9f0e-4a75-9f30-2f0207599d66"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/?TELEGRAM--KANAL--JKVPN--JKVPN--JKVPN--JKVPN--JKVPN--JKVPN"
+      headers: {"Host":"x2.tele-shop-too.studio"}
+    servername: "x2.tele-shop-too.studio"
+    alpn:
+      - "h2"
+      - "http/1.1"
+  - name: "Telegram_vpnv2ray_rayegan_1"
+    type: "vless"
+    server: "172.67.175.120"
+    port: 443
+    uuid: "4b81acdf-9f0e-4a75-9f30-2f0207599d66"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"x2.tele-shop-too.studio"}
+    servername: "x2.tele-shop-too.studio"
+    alpn:
+      - "h2"
+      - "http/1.1"
+  - name: "Telegram_vpnv2ray_rayegan_2"
+    type: "vless"
+    server: "vipde6.persianhostnet.ir"
+    port: 9093
+    uuid: "957d0930-8730-4923-b58c-6c0d640418bd"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "Telegram_vpnv2ray_rayegan_3"
+    type: "vless"
+    server: "CLOUD198.TURKSERVER.IR"
+    port: 2096
+    uuid: "659b51bf-3d3b-454c-aebf-3affa69c8ff3"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/ws"
+      headers: {"Host":"CLOUD198.TURKSERVER.IR"}
+    servername: "bsun-nl.ip-venzo.com"
+  - name: "JoinConfigV2rayy_کانفیگ_رایگان_9"
+    type: "vless"
+    server: "162.159.7.198"
+    port: 443
+    uuid: "e7a9fe3b-c10f-4a67-8f7b-e22c9c246d8d"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/?ed"
+      headers: {"Host":"germany.pahlevancompani.com"}
+    servername: "germany.pahlevancompani.com"
+    alpn:
+      - "http/1.1"
+  - name: "JoinConfigV2rayy_کانفیگ_رایگان_10"
+    type: "vless"
+    server: "ak2.vpnfreedom.tech"
+    port: 443
+    uuid: "4af37467-bf79-4630-98d5-73e7dad60e90"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "l0saUZNgojrR6PjhL_fMHEBZlZ2TJypjRdQyy2mrFFI"
+      short-id: "58"
+    servername: "google.com"
+  - name: "JoinConfigV2rayy_کانفیگ_رایگان_11"
+    type: "vless"
+    server: "104.20.1.252"
+    port: 80
+    uuid: "ba2bb9d8-9baa-45d6-9e0a-38c9cb6a6a9a"
+    network: "ws"
+    tls: false
+    skip-cert-verify: true
+    ws-opts:
+      path: "/?ed"
+      headers: {"Host":"WeaK-preSSUrE3Ga6bzof92.sPorTlaNd.coMPANY."}
+  - name: "JoinConfigV2rayy_کانفیگ_رایگان_12"
+    type: "vless"
+    server: "188.114.98.0"
+    port: 443
+    uuid: "fef4a93d-eb4f-4657-b56b-32a0dc060045"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"dev.twistsparrow.xyz"}
+    servername: "dev.twistsparrow.xyz"
+  - name: "JoinConfigV2rayy_کانفیگ_رایگان_13"
+    type: "vless"
+    server: "46.246.98.74"
+    port: 443
+    uuid: "95e118b4-4352-4218-8493-f20cc7fc467a"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "nBJICh1KzfMblaXtSxpTiPIHGg2TKP5PF8nq-89Q6jg"
+      short-id: "6ed3324b"
+    servername: "learn.microsoft.com"
+  - name: "JoinConfigV2rayy_کانفیگ_رایگان_14"
+    type: "vless"
+    server: "57.129.49.1"
+    port: 23576
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
+    servername: "fuck.rkn"
+  - name: "JoinConfigV2rayy_کانفیگ_رایگان_15"
+    type: "vless"
+    server: "64.188.104.168"
+    port: 40721
+    uuid: "bf3e8944-8d26-47de-8748-b9aa74cce974"
+    network: "tcp"
+    tls: true
+    skip-cert-verify: true
+    reality-opts:
+      public-key: "TUZgwzcTvoROSbgnqMh3WorXVMxQNIF2zsEM39FQbyk"
+      short-id: "df8611c07d"
+    servername: "yahoo.com"
+  - name: "Telegram_vpnv2ray_rayegan_4"
+    type: "vless"
+    server: "ip5.neoservers.ir"
+    port: 8443
+    uuid: "66ac4645-d818-466b-8717-3bdd6cb6923c"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"RxqBfwg0pg6WcwWlfMg5XceISZtoKwomIpxo5LSZ.ViPClUbIrAn.Ir."}
+    servername: "RxqBfwg0pg6WcwWlfMg5XceISZtoKwomIpxo5LSZ.ViPClUbIrAn.Ir."
+    alpn:
+      - "h3"
+      - "h2"
+  - name: "Telegram_vpnv2ray_rayegan_5"
+    type: "vless"
+    server: "ip1.neoservers.ir"
+    port: 8443
+    uuid: "66ac4645-d818-466b-8717-3bdd6cb6923c"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"4mgCAd69VuNq7KzjNVDrkpVzvugByFBdg08tYcrY.ViPClUbIrAn.Ir."}
+    servername: "4mgCAd69VuNq7KzjNVDrkpVzvugByFBdg08tYcrY.ViPClUbIrAn.Ir."
+    alpn:
+      - "h3"
+      - "h2"
+  - name: "Telegram_vpnv2ray_rayegan_6"
+    type: "vless"
+    server: "ip4.neoservers.ir"
+    port: 8443
+    uuid: "66ac4645-d818-466b-8717-3bdd6cb6923c"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"WQLn6jpEZ9ZUkE6ShnzvkBazVVo74J4Bar267N5O.ViPClUbIrAn.Ir."}
+    servername: "WQLn6jpEZ9ZUkE6ShnzvkBazVVo74J4Bar267N5O.ViPClUbIrAn.Ir."
+    alpn:
+      - "h3"
+      - "h2"
+  - name: "Telegram_vpnv2ray_rayegan_7"
+    type: "vless"
+    server: "ip2.neoservers.ir"
+    port: 8443
+    uuid: "66ac4645-d818-466b-8717-3bdd6cb6923c"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"zRIsysUgfbQuJhTKHNgms4L0o9ZzzSYmKw1zKgPP.ViPClUbIrAn.Ir."}
+    servername: "zRIsysUgfbQuJhTKHNgms4L0o9ZzzSYmKw1zKgPP.ViPClUbIrAn.Ir."
+    alpn:
+      - "h3"
+      - "h2"
+  - name: "Telegram_vpnv2ray_rayegan_8"
+    type: "vless"
+    server: "faqatchai.global.ssl.fastly.net"
+    port: 443
+    uuid: "a9bac46a-2037-4ad1-a192-08c70927f4ad"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/containers/fi"
+      headers: {"Host":"faqatchai.global.ssl.fastly.net"}
+    servername: "faqatchai.global.ssl.fastly.net"
+    alpn:
+      - "http/1.1"
+  - name: "Telegram_vpnv2ray_rayegan_9"
+    type: "vless"
+    server: "vipde6.persianhostnet.ir"
+    port: 9093
+    uuid: "957d0930-8730-4923-b58c-6c0d640418bd"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "SPARTAN_YT_قطع_شد_بیا_چنل_جدید_میزارم_2"
+    type: "vless"
+    server: "curt231.ctcurt.ir"
+    port: 2372
+    uuid: "e45881f6-925c-4490-af27-725770911c50"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+    servername: "filimo.com"
+  - name: "Telegram_vpnv2ray_rayegan_10"
+    type: "vless"
+    server: "ip5.neoservers.ir"
+    port: 8443
+    uuid: "66ac4645-d818-466b-8717-3bdd6cb6923c"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"RxqBfwg0pg6WcwWlfMg5XceISZtoKwomIpxo5LSZ.ViPClUbIrAn.Ir."}
+    servername: "RxqBfwg0pg6WcwWlfMg5XceISZtoKwomIpxo5LSZ.ViPClUbIrAn.Ir."
+    alpn:
+      - "h3"
+      - "h2"
+  - name: "Telegram_vpnv2ray_rayegan_11"
+    type: "vless"
+    server: "ip1.neoservers.ir"
+    port: 8443
+    uuid: "66ac4645-d818-466b-8717-3bdd6cb6923c"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"4mgCAd69VuNq7KzjNVDrkpVzvugByFBdg08tYcrY.ViPClUbIrAn.Ir."}
+    servername: "4mgCAd69VuNq7KzjNVDrkpVzvugByFBdg08tYcrY.ViPClUbIrAn.Ir."
+    alpn:
+      - "h3"
+      - "h2"
+  - name: "Telegram_vpnv2ray_rayegan_12"
+    type: "vless"
+    server: "ip4.neoservers.ir"
+    port: 8443
+    uuid: "66ac4645-d818-466b-8717-3bdd6cb6923c"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"WQLn6jpEZ9ZUkE6ShnzvkBazVVo74J4Bar267N5O.ViPClUbIrAn.Ir."}
+    servername: "WQLn6jpEZ9ZUkE6ShnzvkBazVVo74J4Bar267N5O.ViPClUbIrAn.Ir."
+    alpn:
+      - "h3"
+      - "h2"
+  - name: "Telegram_vpnv2ray_rayegan_13"
+    type: "vless"
+    server: "ip2.neoservers.ir"
+    port: 8443
+    uuid: "66ac4645-d818-466b-8717-3bdd6cb6923c"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/"
+      headers: {"Host":"zRIsysUgfbQuJhTKHNgms4L0o9ZzzSYmKw1zKgPP.ViPClUbIrAn.Ir."}
+    servername: "zRIsysUgfbQuJhTKHNgms4L0o9ZzzSYmKw1zKgPP.ViPClUbIrAn.Ir."
+    alpn:
+      - "h3"
+      - "h2"
+  - name: "Telegram_vpnv2ray_rayegan_14"
+    type: "vless"
+    server: "faqatchai.global.ssl.fastly.net"
+    port: 443
+    uuid: "a9bac46a-2037-4ad1-a192-08c70927f4ad"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/containers/fi"
+      headers: {"Host":"faqatchai.global.ssl.fastly.net"}
+    servername: "faqatchai.global.ssl.fastly.net"
+    alpn:
+      - "http/1.1"
+  - name: "Telegram_vpnv2ray_rayegan_15"
+    type: "vless"
+    server: "vipde6.persianhostnet.ir"
+    port: 9093
+    uuid: "957d0930-8730-4923-b58c-6c0d640418bd"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "_کانال_ما_V2ray_ARVIN0_2"
+    type: "vless"
+    server: "curt231.ctcurt.ir"
+    port: 2372
+    uuid: "e45881f6-925c-4490-af27-725770911c50"
+    network: "grpc"
+    tls: true
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: ""
+    servername: "filimo.com"
+  - name: "v2raymeli1_5"
+    type: "vless"
+    server: "cfcdn.zopli.ir"
+    port: 443
+    uuid: "98d677be-b14b-4c14-a96b-4a39a3be645a"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/eyJqdW5rIjoiZHJmTGlJSmciLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+      headers: {"Host":"t86y6leiyaph7tsvb170x7vfx0-3dvh3.vrezht08.workers.dev"}
+  - name: "v2raymeli1_6"
+    type: "vless"
+    server: "cfcdn.zopli.ir"
+    port: 443
+    uuid: "98d677be-b14b-4c14-a96b-4a39a3be645a"
+    network: "ws"
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "/eyJqdW5rIjoiZHJmTGlJSmciLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+      headers: {"Host":"t86y6leiyaph7tsvb170x7vfx0-3dvh3.vrezht08.workers.dev"}
+  - name: "Telegram_GOLDllVPN__347"
+    type: "vmess"
+    server: "45.67.230.79"
+    port: 11052
+    uuid: "314185f7-931d-4656-922d-0857e7afd224"
+    alterId: 0
+    cipher: "auto"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "Telegram_GOLDllVPN__348"
+    type: "vmess"
+    server: "85.195.101.122"
+    port: 40878
+    uuid: "f3d4167e-b15e-4e46-82e9-9286ef93fda7"
+    alterId: 0
+    cipher: "auto"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "Telegram_GOLDllVPN__349"
+    type: "vmess"
+    server: "51.68.191.233"
+    port: 80
+    uuid: "f0eda072-9ae8-494c-a495-215fa5729467"
+    alterId: 0
+    cipher: "auto"
+    network: "ws"
+    tls: false
+    skip-cert-verify: true
+    ws-opts:
+      path: "/vmess/"
+      headers: {"Host":"51.68.191.233"}
+  - name: "Telegram_GOLDllVPN__350"
+    type: "vmess"
+    server: "51.79.69.203"
+    port: 550
+    uuid: "5f4dc799-fa0d-47a0-946b-8ad0ef562095"
+    alterId: 0
+    cipher: "auto"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "Telegram_GOLDllVPN__351"
+    type: "vmess"
+    server: "51.89.166.2"
+    port: 550
+    uuid: "64182bc9-d71d-48b1-bf63-19e3a1b02674"
+    alterId: 0
+    cipher: "auto"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "Telegram_GOLDllVPN__352"
+    type: "vmess"
+    server: "62.146.234.241"
+    port: 550
+    uuid: "569485f9-a9d7-41da-a095-8ef98c2b94e4"
+    alterId: 0
+    cipher: "auto"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "Telegram_GOLDllVPN__353"
+    type: "vmess"
+    server: "38.14.99.179"
+    port: 59807
+    uuid: "418048af-a293-4b99-9b0c-98ca3580dd24"
+    alterId: 0
+    cipher: "auto"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "_vpnbaz"
+    type: "vmess"
+    server: "2.144.20.114"
+    port: 8080
+    uuid: "af419dc6-ae53-471c-85d9-a770e7f6af15"
+    alterId: 0
+    cipher: "auto"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "_vpnbaz_1"
+    type: "vmess"
+    server: "185.18.214.147"
+    port: 8080
+    uuid: "af419dc6-ae53-471c-85d9-a770e7f6af15"
+    alterId: 0
+    cipher: "auto"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "_vpnbaz_2"
+    type: "vmess"
+    server: "212.80.20.65"
+    port: 8080
+    uuid: "af419dc6-ae53-471c-85d9-a770e7f6af15"
+    alterId: 0
+    cipher: "auto"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "_vpnbaz_3"
+    type: "vmess"
+    server: "217.60.247.108"
+    port: 8080
+    uuid: "af419dc6-ae53-471c-85d9-a770e7f6af15"
+    alterId: 0
+    cipher: "auto"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "_vpnbaz_4"
+    type: "vmess"
+    server: "85.133.161.167"
+    port: 8080
+    uuid: "af419dc6-ae53-471c-85d9-a770e7f6af15"
+    alterId: 0
+    cipher: "auto"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "Telegram_e_terafkon_6"
+    type: "vmess"
+    server: "z33.mobato-mobile.com"
+    port: 80
+    uuid: "a81596f9-680f-4fd7-928e-767fbd6a45c5"
+    alterId: 0
+    cipher: "auto"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "_300_39TickV2bot"
+    type: "vmess"
+    server: "89.44.242.255"
+    port: 2010
+    uuid: "6e95fc0e-6f49-42ea-a348-e15c66bc9754"
+    alterId: 0
+    cipher: "auto"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "Telegram_SOSkeyNET"
+    type: "vmess"
+    server: "68.167.181.220"
+    port: 10010
+    uuid: "b4f7c326-5c4f-4e19-83d5-bfa43b461002"
+    alterId: 0
+    cipher: "auto"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "Telegram_SOSkeyNET_1"
+    type: "vmess"
+    server: "68.167.181.220"
+    port: 10010
+    uuid: "b4f7c326-5c4f-4e19-83d5-bfa43b461002"
+    alterId: 0
+    cipher: "auto"
+    network: "tcp"
+    tls: false
+    skip-cert-verify: true
+  - name: "_TmeV2HUBIR_Join_Now__9"
+    type: "trojan"
+    server: "www.multiplydose.com"
+    port: 443
+    password: "humanity"
+    tls: true
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/assignment"
+      headers: {"Host":"www.multiplydose.com"}
+  - name: "telegram_config7land_2"
+    type: "trojan"
+    server: "172.64.152.23"
+    port: 443
+    password: "humanity"
+    tls: true
+    skip-cert-verify: false
+    servername: "www.gossipglove.com"
+    network: "ws"
+    ws-opts:
+      path: "/assignment"
+      headers: {"Host":"www.gossipglove.com"}
+proxy-groups:
+  - name: "🚀 انتخاب پروکسی"
+    type: "select"
+    proxies:
+      - "♻️ خودکار"
+      - "🎯 مستقیم"
+      - "flyv2ray"
+      - "Blank_Vpn_لطفا_برای_حمایت_جوین_شید"
+      - "Blank_Vpn_لطفا_برای_حمایت_جوین_شید_1"
+      - "_TmeV2HUBIR_Join_Now_"
+      - "telegram_config7land"
+      - "httpstmekanfek_v2"
+      - "httpstmekanfek_v2_1"
+      - "JoinConfigV2rayy_کانفیگ_رایگان"
+      - "teldrgateway"
+      - "rendvpn"
+      - "rendvpn_1"
+      - "rendvpn_2"
+      - "rendvpn_3"
+      - "JoinConfigV2rayy_کانفیگ_رایگان_1"
+      - "flyv2ray_1"
+      - "Telegram_GOLDllVPN_"
+      - "Telegram_GOLDllVPN__1"
+      - "Telegram_GOLDllVPN__2"
+      - "Telegram_GOLDllVPN__3"
+      - "Telegram_GOLDllVPN__4"
+      - "Telegram_GOLDllVPN__5"
+      - "Telegram_GOLDllVPN__6"
+      - "Telegram_GOLDllVPN__7"
+      - "Telegram_GOLDllVPN__8"
+      - "Telegram_GOLDllVPN__9"
+      - "Telegram_GOLDllVPN__10"
+      - "Telegram_GOLDllVPN__11"
+      - "Telegram_GOLDllVPN__12"
+      - "Telegram_GOLDllVPN__13"
+      - "Telegram_GOLDllVPN__14"
+      - "Telegram_GOLDllVPN__15"
+      - "Telegram_GOLDllVPN__16"
+      - "Telegram_GOLDllVPN__17"
+      - "Telegram_GOLDllVPN__18"
+      - "Telegram_GOLDllVPN__19"
+      - "Telegram_GOLDllVPN__20"
+      - "Telegram_GOLDllVPN__21"
+      - "Telegram_GOLDllVPN__22"
+      - "Telegram_GOLDllVPN__23"
+      - "Telegram_GOLDllVPN__24"
+      - "Telegram_GOLDllVPN__25"
+      - "Telegram_GOLDllVPN__26"
+      - "Telegram_GOLDllVPN__27"
+      - "Telegram_GOLDllVPN__28"
+      - "Telegram_GOLDllVPN__29"
+      - "Telegram_GOLDllVPN__30"
+      - "Telegram_GOLDllVPN__31"
+      - "Telegram_GOLDllVPN__32"
+      - "Telegram_GOLDllVPN__33"
+      - "Telegram_GOLDllVPN__34"
+      - "Telegram_GOLDllVPN__35"
+      - "Telegram_GOLDllVPN__36"
+      - "Telegram_GOLDllVPN__37"
+      - "Telegram_GOLDllVPN__38"
+      - "Telegram_GOLDllVPN__39"
+      - "Telegram_GOLDllVPN__40"
+      - "Telegram_GOLDllVPN__41"
+      - "Telegram_GOLDllVPN__42"
+      - "Telegram_GOLDllVPN__43"
+      - "Telegram_GOLDllVPN__44"
+      - "Telegram_GOLDllVPN__45"
+      - "Telegram_GOLDllVPN__46"
+      - "Telegram_GOLDllVPN__47"
+      - "Telegram_GOLDllVPN__48"
+      - "Telegram_GOLDllVPN__49"
+      - "Telegram_GOLDllVPN__50"
+      - "Telegram_GOLDllVPN__51"
+      - "Telegram_GOLDllVPN__52"
+      - "Telegram_GOLDllVPN__53"
+      - "Telegram_GOLDllVPN__54"
+      - "Telegram_GOLDllVPN__55"
+      - "Telegram_GOLDllVPN__56"
+      - "Telegram_GOLDllVPN__57"
+      - "Telegram_GOLDllVPN__58"
+      - "Telegram_GOLDllVPN__59"
+      - "Telegram_GOLDllVPN__60"
+      - "Telegram_GOLDllVPN__61"
+      - "Telegram_GOLDllVPN__62"
+      - "Telegram_GOLDllVPN__63"
+      - "Telegram_GOLDllVPN__64"
+      - "Telegram_GOLDllVPN__65"
+      - "Telegram_GOLDllVPN__66"
+      - "Telegram_GOLDllVPN__67"
+      - "Telegram_GOLDllVPN__68"
+      - "Telegram_GOLDllVPN__69"
+      - "Telegram_GOLDllVPN__70"
+      - "Telegram_GOLDllVPN__71"
+      - "Telegram_GOLDllVPN__72"
+      - "Telegram_GOLDllVPN__73"
+      - "Telegram_GOLDllVPN__74"
+      - "Telegram_GOLDllVPN__75"
+      - "Telegram_GOLDllVPN__76"
+      - "Telegram_GOLDllVPN__77"
+      - "Telegram_GOLDllVPN__78"
+      - "Telegram_GOLDllVPN__79"
+      - "Telegram_GOLDllVPN__80"
+      - "Telegram_GOLDllVPN__81"
+      - "Telegram_GOLDllVPN__82"
+      - "Telegram_GOLDllVPN__83"
+      - "Telegram_GOLDllVPN__84"
+      - "Telegram_GOLDllVPN__85"
+      - "Telegram_GOLDllVPN__86"
+      - "Telegram_GOLDllVPN__87"
+      - "Telegram_GOLDllVPN__88"
+      - "Telegram_GOLDllVPN__89"
+      - "Telegram_GOLDllVPN__90"
+      - "Telegram_GOLDllVPN__91"
+      - "Telegram_GOLDllVPN__92"
+      - "Telegram_GOLDllVPN__93"
+      - "Telegram_GOLDllVPN__94"
+      - "Telegram_GOLDllVPN__95"
+      - "Telegram_GOLDllVPN__96"
+      - "Telegram_GOLDllVPN__97"
+      - "Telegram_GOLDllVPN__98"
+      - "Telegram_GOLDllVPN__99"
+      - "Telegram_GOLDllVPN__100"
+      - "Telegram_GOLDllVPN__101"
+      - "Telegram_GOLDllVPN__102"
+      - "Telegram_GOLDllVPN__103"
+      - "Telegram_GOLDllVPN__104"
+      - "Telegram_GOLDllVPN__105"
+      - "Telegram_GOLDllVPN__106"
+      - "Telegram_GOLDllVPN__107"
+      - "Telegram_GOLDllVPN__108"
+      - "Telegram_GOLDllVPN__109"
+      - "Telegram_GOLDllVPN__110"
+      - "Telegram_GOLDllVPN__111"
+      - "Telegram_GOLDllVPN__112"
+      - "Telegram_GOLDllVPN__113"
+      - "Telegram_GOLDllVPN__114"
+      - "Telegram_GOLDllVPN__115"
+      - "Telegram_GOLDllVPN__116"
+      - "Telegram_GOLDllVPN__117"
+      - "Telegram_GOLDllVPN__118"
+      - "Telegram_GOLDllVPN__119"
+      - "Telegram_GOLDllVPN__120"
+      - "Telegram_GOLDllVPN__121"
+      - "Telegram_GOLDllVPN__122"
+      - "Telegram_GOLDllVPN__123"
+      - "Telegram_GOLDllVPN__124"
+      - "Telegram_GOLDllVPN__125"
+      - "Telegram_GOLDllVPN__126"
+      - "Telegram_GOLDllVPN__127"
+      - "Telegram_GOLDllVPN__128"
+      - "Telegram_GOLDllVPN__129"
+      - "Telegram_GOLDllVPN__130"
+      - "Telegram_GOLDllVPN__131"
+      - "Telegram_GOLDllVPN__132"
+      - "Telegram_GOLDllVPN__133"
+      - "Telegram_GOLDllVPN__134"
+      - "Telegram_GOLDllVPN__135"
+      - "Telegram_GOLDllVPN__136"
+      - "Telegram_GOLDllVPN__137"
+      - "Telegram_GOLDllVPN__138"
+      - "Telegram_GOLDllVPN__139"
+      - "Telegram_GOLDllVPN__140"
+      - "Telegram_GOLDllVPN__141"
+      - "Telegram_GOLDllVPN__142"
+      - "Telegram_GOLDllVPN__143"
+      - "Telegram_GOLDllVPN__144"
+      - "Telegram_GOLDllVPN__145"
+      - "Telegram_GOLDllVPN__146"
+      - "Telegram_GOLDllVPN__147"
+      - "Telegram_GOLDllVPN__148"
+      - "Telegram_GOLDllVPN__149"
+      - "Telegram_GOLDllVPN__150"
+      - "Telegram_GOLDllVPN__151"
+      - "Telegram_GOLDllVPN__152"
+      - "Telegram_GOLDllVPN__153"
+      - "Telegram_GOLDllVPN__154"
+      - "Telegram_GOLDllVPN__155"
+      - "Telegram_GOLDllVPN__156"
+      - "Telegram_GOLDllVPN__157"
+      - "Telegram_GOLDllVPN__158"
+      - "Telegram_GOLDllVPN__159"
+      - "Telegram_GOLDllVPN__160"
+      - "Telegram_GOLDllVPN__161"
+      - "Telegram_GOLDllVPN__162"
+      - "Telegram_GOLDllVPN__163"
+      - "Telegram_GOLDllVPN__164"
+      - "Telegram_GOLDllVPN__165"
+      - "Telegram_GOLDllVPN__166"
+      - "Telegram_GOLDllVPN__167"
+      - "Telegram_GOLDllVPN__168"
+      - "Telegram_GOLDllVPN__169"
+      - "Telegram_GOLDllVPN__170"
+      - "Telegram_GOLDllVPN__171"
+      - "Telegram_GOLDllVPN__172"
+      - "Telegram_GOLDllVPN__173"
+      - "Telegram_GOLDllVPN__174"
+      - "Telegram_GOLDllVPN__175"
+      - "Telegram_GOLDllVPN__176"
+      - "Telegram_GOLDllVPN__177"
+      - "Telegram_GOLDllVPN__178"
+      - "Telegram_GOLDllVPN__179"
+      - "Telegram_GOLDllVPN__180"
+      - "Telegram_GOLDllVPN__181"
+      - "Telegram_GOLDllVPN__182"
+      - "Telegram_GOLDllVPN__183"
+      - "Telegram_GOLDllVPN__184"
+      - "Telegram_GOLDllVPN__185"
+      - "Telegram_GOLDllVPN__186"
+      - "Telegram_GOLDllVPN__187"
+      - "Telegram_GOLDllVPN__188"
+      - "Telegram_GOLDllVPN__189"
+      - "Telegram_GOLDllVPN__190"
+      - "Telegram_GOLDllVPN__191"
+      - "Telegram_GOLDllVPN__192"
+      - "Telegram_GOLDllVPN__193"
+      - "Telegram_GOLDllVPN__194"
+      - "Telegram_GOLDllVPN__195"
+      - "Telegram_GOLDllVPN__196"
+      - "Telegram_GOLDllVPN__197"
+      - "Telegram_GOLDllVPN__198"
+      - "Telegram_GOLDllVPN__199"
+      - "Telegram_GOLDllVPN__200"
+      - "Telegram_GOLDllVPN__201"
+      - "Telegram_GOLDllVPN__202"
+      - "Telegram_GOLDllVPN__203"
+      - "Telegram_GOLDllVPN__204"
+      - "Telegram_GOLDllVPN__205"
+      - "Telegram_GOLDllVPN__206"
+      - "Telegram_GOLDllVPN__207"
+      - "Telegram_GOLDllVPN__208"
+      - "Telegram_GOLDllVPN__209"
+      - "Telegram_GOLDllVPN__210"
+      - "Telegram_GOLDllVPN__211"
+      - "Telegram_GOLDllVPN__212"
+      - "Telegram_GOLDllVPN__213"
+      - "Telegram_GOLDllVPN__214"
+      - "Telegram_GOLDllVPN__215"
+      - "Telegram_GOLDllVPN__216"
+      - "Telegram_GOLDllVPN__217"
+      - "Telegram_GOLDllVPN__218"
+      - "Telegram_GOLDllVPN__219"
+      - "Telegram_GOLDllVPN__220"
+      - "Telegram_GOLDllVPN__221"
+      - "Telegram_GOLDllVPN__222"
+      - "Telegram_GOLDllVPN__223"
+      - "Telegram_GOLDllVPN__224"
+      - "Telegram_GOLDllVPN__225"
+      - "Telegram_GOLDllVPN__226"
+      - "Telegram_GOLDllVPN__227"
+      - "Telegram_GOLDllVPN__228"
+      - "Telegram_GOLDllVPN__229"
+      - "Telegram_GOLDllVPN__230"
+      - "Telegram_GOLDllVPN__231"
+      - "Telegram_GOLDllVPN__232"
+      - "Telegram_GOLDllVPN__233"
+      - "Telegram_GOLDllVPN__234"
+      - "Telegram_GOLDllVPN__235"
+      - "Telegram_GOLDllVPN__236"
+      - "Telegram_GOLDllVPN__237"
+      - "Telegram_GOLDllVPN__238"
+      - "Telegram_GOLDllVPN__239"
+      - "Telegram_GOLDllVPN__240"
+      - "Telegram_GOLDllVPN__241"
+      - "Telegram_GOLDllVPN__242"
+      - "Telegram_GOLDllVPN__243"
+      - "Telegram_GOLDllVPN__244"
+      - "Telegram_GOLDllVPN__245"
+      - "Telegram_GOLDllVPN__246"
+      - "Telegram_GOLDllVPN__247"
+      - "Telegram_GOLDllVPN__248"
+      - "Telegram_GOLDllVPN__249"
+      - "Telegram_GOLDllVPN__250"
+      - "Telegram_GOLDllVPN__251"
+      - "Telegram_GOLDllVPN__252"
+      - "Telegram_GOLDllVPN__253"
+      - "Telegram_GOLDllVPN__254"
+      - "Telegram_GOLDllVPN__255"
+      - "Telegram_GOLDllVPN__256"
+      - "Telegram_GOLDllVPN__257"
+      - "Telegram_GOLDllVPN__258"
+      - "Telegram_GOLDllVPN__259"
+      - "Telegram_GOLDllVPN__260"
+      - "Telegram_GOLDllVPN__261"
+      - "Telegram_GOLDllVPN__262"
+      - "Telegram_GOLDllVPN__263"
+      - "Telegram_GOLDllVPN__264"
+      - "Telegram_GOLDllVPN__265"
+      - "Telegram_GOLDllVPN__266"
+      - "Telegram_GOLDllVPN__267"
+      - "Telegram_GOLDllVPN__268"
+      - "Telegram_GOLDllVPN__269"
+      - "Telegram_GOLDllVPN__270"
+      - "Telegram_GOLDllVPN__271"
+      - "Telegram_GOLDllVPN__272"
+      - "Telegram_GOLDllVPN__273"
+      - "Telegram_GOLDllVPN__274"
+      - "Telegram_GOLDllVPN__275"
+      - "Telegram_GOLDllVPN__276"
+      - "Telegram_GOLDllVPN__277"
+      - "Telegram_GOLDllVPN__278"
+      - "Telegram_GOLDllVPN__279"
+      - "Telegram_GOLDllVPN__280"
+      - "Telegram_GOLDllVPN__281"
+      - "Telegram_GOLDllVPN__282"
+      - "Telegram_GOLDllVPN__283"
+      - "Telegram_GOLDllVPN__284"
+      - "Telegram_GOLDllVPN__285"
+      - "Telegram_GOLDllVPN__286"
+      - "Telegram_GOLDllVPN__287"
+      - "Telegram_GOLDllVPN__288"
+      - "Telegram_GOLDllVPN__289"
+      - "Telegram_GOLDllVPN__290"
+      - "Telegram_GOLDllVPN__291"
+      - "Telegram_GOLDllVPN__292"
+      - "Telegram_GOLDllVPN__293"
+      - "Telegram_GOLDllVPN__294"
+      - "Telegram_GOLDllVPN__295"
+      - "Telegram_GOLDllVPN__296"
+      - "Telegram_GOLDllVPN__297"
+      - "Telegram_GOLDllVPN__298"
+      - "Telegram_GOLDllVPN__299"
+      - "Telegram_GOLDllVPN__300"
+      - "Telegram_GOLDllVPN__301"
+      - "Telegram_GOLDllVPN__302"
+      - "Telegram_GOLDllVPN__303"
+      - "Telegram_GOLDllVPN__304"
+      - "Telegram_GOLDllVPN__305"
+      - "Telegram_GOLDllVPN__306"
+      - "Telegram_GOLDllVPN__307"
+      - "Telegram_GOLDllVPN__308"
+      - "Telegram_GOLDllVPN__309"
+      - "Telegram_GOLDllVPN__310"
+      - "Telegram_GOLDllVPN__311"
+      - "Telegram_GOLDllVPN__312"
+      - "Telegram_GOLDllVPN__313"
+      - "Telegram_GOLDllVPN__314"
+      - "Telegram_GOLDllVPN__315"
+      - "Telegram_GOLDllVPN__316"
+      - "Telegram_GOLDllVPN__317"
+      - "Telegram_GOLDllVPN__318"
+      - "Telegram_GOLDllVPN__319"
+      - "Telegram_GOLDllVPN__320"
+      - "Telegram_GOLDllVPN__321"
+      - "Telegram_GOLDllVPN__322"
+      - "Telegram_GOLDllVPN__323"
+      - "Telegram_GOLDllVPN__324"
+      - "Telegram_GOLDllVPN__325"
+      - "Telegram_GOLDllVPN__326"
+      - "Telegram_GOLDllVPN__327"
+      - "Telegram_GOLDllVPN__328"
+      - "Telegram_GOLDllVPN__329"
+      - "Telegram_GOLDllVPN__330"
+      - "Telegram_GOLDllVPN__331"
+      - "Telegram_GOLDllVPN__332"
+      - "Telegram_GOLDllVPN__333"
+      - "Telegram_GOLDllVPN__334"
+      - "Telegram_GOLDllVPN__335"
+      - "Telegram_GOLDllVPN__336"
+      - "Telegram_GOLDllVPN__337"
+      - "Telegram_GOLDllVPN__338"
+      - "Telegram_GOLDllVPN__339"
+      - "Telegram_GOLDllVPN__340"
+      - "Telegram_GOLDllVPN__341"
+      - "Telegram_GOLDllVPN__342"
+      - "Telegram_GOLDllVPN__343"
+      - "Telegram_GOLDllVPN__344"
+      - "Telegram_GOLDllVPN__345"
+      - "Telegram_GOLDllVPN__346"
+      - "Blank_Vpn_لطفا_برای_حمایت_جوین_شید_2"
+      - "Blank_Vpn_لطفا_برای_حمایت_جوین_شید_3"
+      - "Blank_Vpn_لطفا_برای_حمایت_جوین_شید_4"
+      - "Server"
+      - "Provider3A20"
+      - "یامیام_پروکسی"
+      - "Server_1"
+      - "Server_2"
+      - "teldrgateway_1"
+      - "_V2RAYVlP"
+      - "-500GB-Join-Farsisports"
+      - "_TmeV2HUBIR_Join_Now__1"
+      - "_TmeV2HUBIR_Join_Now__2"
+      - "_TmeV2HUBIR_Join_Now__3"
+      - "_TmeV2HUBIR_Join_Now__4"
+      - "_TmeV2HUBIR_Join_Now__5"
+      - "_TmeV2HUBIR_Join_Now__6"
+      - "_TmeV2HUBIR_Join_Now__7"
+      - "_TmeV2HUBIR_Join_Now__8"
+      - "v2raymeli1"
+      - "v2raymeli1_1"
+      - "Telegram_e_terafkon"
+      - "Telegram_e_terafkon_1"
+      - "Telegram_e_terafkon_2"
+      - "Telegram_e_terafkon_3"
+      - "Telegram_e_terafkon_4"
+      - "Telegram_e_terafkon_5"
+      - "v2raymeli1_2"
+      - "v2raymeli1_3"
+      - "telegram_config7land_1"
+      - "confegraigan_نت_ملی_102"
+      - "confegraigan_نت_ملی_101"
+      - "v2raymeli1_4"
+      - "HajmVPN_Config_"
+      - "HajmVPN_Config__1"
+      - "JoinConfigV2rayy_کانفیگ_رایگان_2"
+      - "JoinConfigV2rayy_کانفیگ_رایگان_3"
+      - "JoinConfigV2rayy_کانفیگ_رایگان_4"
+      - "JoinConfigV2rayy_کانفیگ_رایگان_5"
+      - "JoinConfigV2rayy_کانفیگ_رایگان_6"
+      - "JoinConfigV2rayy_کانفیگ_رایگان_7"
+      - "JoinConfigV2rayy_کانفیگ_رایگان_8"
+      - "Channel"
+      - "_کانال_ما_V2ray_ARVIN0"
+      - "GhostVPNStore_جویین_بدهههه"
+      - "IranProxyPlus"
+      - "httpstmekanfek_v2_2"
+      - "Biavaslim20F09F8C9920"
+      - "Biavaslim"
+      - "Biavaslim_1"
+      - "Biavaslim_2"
+      - "Biavaslim_3"
+      - "Biavaslim_4"
+      - "Biavaslim_5"
+      - "Biavaslim_6"
+      - "teldrgateway_2"
+      - "teldrgateway_3"
+      - "rendvpn_4"
+      - "rendvpn_5"
+      - "rendvpn_6"
+      - "rendvpn_7"
+      - "rendvpn_8"
+      - "rendvpn_9"
+      - "rendvpn_10"
+      - "rendvpn_11"
+      - "rendvpn_12"
+      - "rendvpn_13"
+      - "rendvpn_14"
+      - "rendvpn_15"
+      - "rendvpn_16"
+      - "rendvpn_17"
+      - "rendvpn_18"
+      - "rendvpn_19"
+      - "rendvpn_20"
+      - "rendvpn_21"
+      - "rendvpn_22"
+      - "rendvpn_23"
+      - "teldrgateway_4"
+      - "SPARTAN_YT_قطع_شد_بیا_چنل_جدید_میزارم"
+      - "Server_3"
+      - "SPARTAN_YT_قطع_شد_بیا_چنل_جدید_میزارم_1"
+      - "_کانال_ما_V2ray_ARVIN0_1"
+      - "Farsisports"
+      - "Telegram_vpnv2ray_rayegan"
+      - "Telegram_vpnv2ray_rayegan_1"
+      - "Telegram_vpnv2ray_rayegan_2"
+      - "Telegram_vpnv2ray_rayegan_3"
+      - "JoinConfigV2rayy_کانفیگ_رایگان_9"
+      - "JoinConfigV2rayy_کانفیگ_رایگان_10"
+      - "JoinConfigV2rayy_کانفیگ_رایگان_11"
+      - "JoinConfigV2rayy_کانفیگ_رایگان_12"
+      - "JoinConfigV2rayy_کانفیگ_رایگان_13"
+      - "JoinConfigV2rayy_کانفیگ_رایگان_14"
+      - "JoinConfigV2rayy_کانفیگ_رایگان_15"
+      - "Telegram_vpnv2ray_rayegan_4"
+      - "Telegram_vpnv2ray_rayegan_5"
+      - "Telegram_vpnv2ray_rayegan_6"
+      - "Telegram_vpnv2ray_rayegan_7"
+      - "Telegram_vpnv2ray_rayegan_8"
+      - "Telegram_vpnv2ray_rayegan_9"
+      - "SPARTAN_YT_قطع_شد_بیا_چنل_جدید_میزارم_2"
+      - "Telegram_vpnv2ray_rayegan_10"
+      - "Telegram_vpnv2ray_rayegan_11"
+      - "Telegram_vpnv2ray_rayegan_12"
+      - "Telegram_vpnv2ray_rayegan_13"
+      - "Telegram_vpnv2ray_rayegan_14"
+      - "Telegram_vpnv2ray_rayegan_15"
+      - "_کانال_ما_V2ray_ARVIN0_2"
+      - "v2raymeli1_5"
+      - "v2raymeli1_6"
+      - "Telegram_GOLDllVPN__347"
+      - "Telegram_GOLDllVPN__348"
+      - "Telegram_GOLDllVPN__349"
+      - "Telegram_GOLDllVPN__350"
+      - "Telegram_GOLDllVPN__351"
+      - "Telegram_GOLDllVPN__352"
+      - "Telegram_GOLDllVPN__353"
+      - "_vpnbaz"
+      - "_vpnbaz_1"
+      - "_vpnbaz_2"
+      - "_vpnbaz_3"
+      - "_vpnbaz_4"
+      - "Telegram_e_terafkon_6"
+      - "_300_39TickV2bot"
+      - "Telegram_SOSkeyNET"
+      - "Telegram_SOSkeyNET_1"
+      - "_TmeV2HUBIR_Join_Now__9"
+      - "telegram_config7land_2"
+  - name: "♻️ خودکار"
+    type: "url-test"
+    proxies:
+      - "flyv2ray"
+      - "Blank_Vpn_لطفا_برای_حمایت_جوین_شید"
+      - "Blank_Vpn_لطفا_برای_حمایت_جوین_شید_1"
+      - "_TmeV2HUBIR_Join_Now_"
+      - "telegram_config7land"
+      - "httpstmekanfek_v2"
+      - "httpstmekanfek_v2_1"
+      - "JoinConfigV2rayy_کانفیگ_رایگان"
+      - "teldrgateway"
+      - "rendvpn"
+      - "rendvpn_1"
+      - "rendvpn_2"
+      - "rendvpn_3"
+      - "JoinConfigV2rayy_کانفیگ_رایگان_1"
+      - "flyv2ray_1"
+      - "Telegram_GOLDllVPN_"
+      - "Telegram_GOLDllVPN__1"
+      - "Telegram_GOLDllVPN__2"
+      - "Telegram_GOLDllVPN__3"
+      - "Telegram_GOLDllVPN__4"
+      - "Telegram_GOLDllVPN__5"
+      - "Telegram_GOLDllVPN__6"
+      - "Telegram_GOLDllVPN__7"
+      - "Telegram_GOLDllVPN__8"
+      - "Telegram_GOLDllVPN__9"
+      - "Telegram_GOLDllVPN__10"
+      - "Telegram_GOLDllVPN__11"
+      - "Telegram_GOLDllVPN__12"
+      - "Telegram_GOLDllVPN__13"
+      - "Telegram_GOLDllVPN__14"
+      - "Telegram_GOLDllVPN__15"
+      - "Telegram_GOLDllVPN__16"
+      - "Telegram_GOLDllVPN__17"
+      - "Telegram_GOLDllVPN__18"
+      - "Telegram_GOLDllVPN__19"
+      - "Telegram_GOLDllVPN__20"
+      - "Telegram_GOLDllVPN__21"
+      - "Telegram_GOLDllVPN__22"
+      - "Telegram_GOLDllVPN__23"
+      - "Telegram_GOLDllVPN__24"
+      - "Telegram_GOLDllVPN__25"
+      - "Telegram_GOLDllVPN__26"
+      - "Telegram_GOLDllVPN__27"
+      - "Telegram_GOLDllVPN__28"
+      - "Telegram_GOLDllVPN__29"
+      - "Telegram_GOLDllVPN__30"
+      - "Telegram_GOLDllVPN__31"
+      - "Telegram_GOLDllVPN__32"
+      - "Telegram_GOLDllVPN__33"
+      - "Telegram_GOLDllVPN__34"
+      - "Telegram_GOLDllVPN__35"
+      - "Telegram_GOLDllVPN__36"
+      - "Telegram_GOLDllVPN__37"
+      - "Telegram_GOLDllVPN__38"
+      - "Telegram_GOLDllVPN__39"
+      - "Telegram_GOLDllVPN__40"
+      - "Telegram_GOLDllVPN__41"
+      - "Telegram_GOLDllVPN__42"
+      - "Telegram_GOLDllVPN__43"
+      - "Telegram_GOLDllVPN__44"
+      - "Telegram_GOLDllVPN__45"
+      - "Telegram_GOLDllVPN__46"
+      - "Telegram_GOLDllVPN__47"
+      - "Telegram_GOLDllVPN__48"
+      - "Telegram_GOLDllVPN__49"
+      - "Telegram_GOLDllVPN__50"
+      - "Telegram_GOLDllVPN__51"
+      - "Telegram_GOLDllVPN__52"
+      - "Telegram_GOLDllVPN__53"
+      - "Telegram_GOLDllVPN__54"
+      - "Telegram_GOLDllVPN__55"
+      - "Telegram_GOLDllVPN__56"
+      - "Telegram_GOLDllVPN__57"
+      - "Telegram_GOLDllVPN__58"
+      - "Telegram_GOLDllVPN__59"
+      - "Telegram_GOLDllVPN__60"
+      - "Telegram_GOLDllVPN__61"
+      - "Telegram_GOLDllVPN__62"
+      - "Telegram_GOLDllVPN__63"
+      - "Telegram_GOLDllVPN__64"
+      - "Telegram_GOLDllVPN__65"
+      - "Telegram_GOLDllVPN__66"
+      - "Telegram_GOLDllVPN__67"
+      - "Telegram_GOLDllVPN__68"
+      - "Telegram_GOLDllVPN__69"
+      - "Telegram_GOLDllVPN__70"
+      - "Telegram_GOLDllVPN__71"
+      - "Telegram_GOLDllVPN__72"
+      - "Telegram_GOLDllVPN__73"
+      - "Telegram_GOLDllVPN__74"
+      - "Telegram_GOLDllVPN__75"
+      - "Telegram_GOLDllVPN__76"
+      - "Telegram_GOLDllVPN__77"
+      - "Telegram_GOLDllVPN__78"
+      - "Telegram_GOLDllVPN__79"
+      - "Telegram_GOLDllVPN__80"
+      - "Telegram_GOLDllVPN__81"
+      - "Telegram_GOLDllVPN__82"
+      - "Telegram_GOLDllVPN__83"
+      - "Telegram_GOLDllVPN__84"
+      - "Telegram_GOLDllVPN__85"
+      - "Telegram_GOLDllVPN__86"
+      - "Telegram_GOLDllVPN__87"
+      - "Telegram_GOLDllVPN__88"
+      - "Telegram_GOLDllVPN__89"
+      - "Telegram_GOLDllVPN__90"
+      - "Telegram_GOLDllVPN__91"
+      - "Telegram_GOLDllVPN__92"
+      - "Telegram_GOLDllVPN__93"
+      - "Telegram_GOLDllVPN__94"
+      - "Telegram_GOLDllVPN__95"
+      - "Telegram_GOLDllVPN__96"
+      - "Telegram_GOLDllVPN__97"
+      - "Telegram_GOLDllVPN__98"
+      - "Telegram_GOLDllVPN__99"
+      - "Telegram_GOLDllVPN__100"
+      - "Telegram_GOLDllVPN__101"
+      - "Telegram_GOLDllVPN__102"
+      - "Telegram_GOLDllVPN__103"
+      - "Telegram_GOLDllVPN__104"
+      - "Telegram_GOLDllVPN__105"
+      - "Telegram_GOLDllVPN__106"
+      - "Telegram_GOLDllVPN__107"
+      - "Telegram_GOLDllVPN__108"
+      - "Telegram_GOLDllVPN__109"
+      - "Telegram_GOLDllVPN__110"
+      - "Telegram_GOLDllVPN__111"
+      - "Telegram_GOLDllVPN__112"
+      - "Telegram_GOLDllVPN__113"
+      - "Telegram_GOLDllVPN__114"
+      - "Telegram_GOLDllVPN__115"
+      - "Telegram_GOLDllVPN__116"
+      - "Telegram_GOLDllVPN__117"
+      - "Telegram_GOLDllVPN__118"
+      - "Telegram_GOLDllVPN__119"
+      - "Telegram_GOLDllVPN__120"
+      - "Telegram_GOLDllVPN__121"
+      - "Telegram_GOLDllVPN__122"
+      - "Telegram_GOLDllVPN__123"
+      - "Telegram_GOLDllVPN__124"
+      - "Telegram_GOLDllVPN__125"
+      - "Telegram_GOLDllVPN__126"
+      - "Telegram_GOLDllVPN__127"
+      - "Telegram_GOLDllVPN__128"
+      - "Telegram_GOLDllVPN__129"
+      - "Telegram_GOLDllVPN__130"
+      - "Telegram_GOLDllVPN__131"
+      - "Telegram_GOLDllVPN__132"
+      - "Telegram_GOLDllVPN__133"
+      - "Telegram_GOLDllVPN__134"
+      - "Telegram_GOLDllVPN__135"
+      - "Telegram_GOLDllVPN__136"
+      - "Telegram_GOLDllVPN__137"
+      - "Telegram_GOLDllVPN__138"
+      - "Telegram_GOLDllVPN__139"
+      - "Telegram_GOLDllVPN__140"
+      - "Telegram_GOLDllVPN__141"
+      - "Telegram_GOLDllVPN__142"
+      - "Telegram_GOLDllVPN__143"
+      - "Telegram_GOLDllVPN__144"
+      - "Telegram_GOLDllVPN__145"
+      - "Telegram_GOLDllVPN__146"
+      - "Telegram_GOLDllVPN__147"
+      - "Telegram_GOLDllVPN__148"
+      - "Telegram_GOLDllVPN__149"
+      - "Telegram_GOLDllVPN__150"
+      - "Telegram_GOLDllVPN__151"
+      - "Telegram_GOLDllVPN__152"
+      - "Telegram_GOLDllVPN__153"
+      - "Telegram_GOLDllVPN__154"
+      - "Telegram_GOLDllVPN__155"
+      - "Telegram_GOLDllVPN__156"
+      - "Telegram_GOLDllVPN__157"
+      - "Telegram_GOLDllVPN__158"
+      - "Telegram_GOLDllVPN__159"
+      - "Telegram_GOLDllVPN__160"
+      - "Telegram_GOLDllVPN__161"
+      - "Telegram_GOLDllVPN__162"
+      - "Telegram_GOLDllVPN__163"
+      - "Telegram_GOLDllVPN__164"
+      - "Telegram_GOLDllVPN__165"
+      - "Telegram_GOLDllVPN__166"
+      - "Telegram_GOLDllVPN__167"
+      - "Telegram_GOLDllVPN__168"
+      - "Telegram_GOLDllVPN__169"
+      - "Telegram_GOLDllVPN__170"
+      - "Telegram_GOLDllVPN__171"
+      - "Telegram_GOLDllVPN__172"
+      - "Telegram_GOLDllVPN__173"
+      - "Telegram_GOLDllVPN__174"
+      - "Telegram_GOLDllVPN__175"
+      - "Telegram_GOLDllVPN__176"
+      - "Telegram_GOLDllVPN__177"
+      - "Telegram_GOLDllVPN__178"
+      - "Telegram_GOLDllVPN__179"
+      - "Telegram_GOLDllVPN__180"
+      - "Telegram_GOLDllVPN__181"
+      - "Telegram_GOLDllVPN__182"
+      - "Telegram_GOLDllVPN__183"
+      - "Telegram_GOLDllVPN__184"
+      - "Telegram_GOLDllVPN__185"
+      - "Telegram_GOLDllVPN__186"
+      - "Telegram_GOLDllVPN__187"
+      - "Telegram_GOLDllVPN__188"
+      - "Telegram_GOLDllVPN__189"
+      - "Telegram_GOLDllVPN__190"
+      - "Telegram_GOLDllVPN__191"
+      - "Telegram_GOLDllVPN__192"
+      - "Telegram_GOLDllVPN__193"
+      - "Telegram_GOLDllVPN__194"
+      - "Telegram_GOLDllVPN__195"
+      - "Telegram_GOLDllVPN__196"
+      - "Telegram_GOLDllVPN__197"
+      - "Telegram_GOLDllVPN__198"
+      - "Telegram_GOLDllVPN__199"
+      - "Telegram_GOLDllVPN__200"
+      - "Telegram_GOLDllVPN__201"
+      - "Telegram_GOLDllVPN__202"
+      - "Telegram_GOLDllVPN__203"
+      - "Telegram_GOLDllVPN__204"
+      - "Telegram_GOLDllVPN__205"
+      - "Telegram_GOLDllVPN__206"
+      - "Telegram_GOLDllVPN__207"
+      - "Telegram_GOLDllVPN__208"
+      - "Telegram_GOLDllVPN__209"
+      - "Telegram_GOLDllVPN__210"
+      - "Telegram_GOLDllVPN__211"
+      - "Telegram_GOLDllVPN__212"
+      - "Telegram_GOLDllVPN__213"
+      - "Telegram_GOLDllVPN__214"
+      - "Telegram_GOLDllVPN__215"
+      - "Telegram_GOLDllVPN__216"
+      - "Telegram_GOLDllVPN__217"
+      - "Telegram_GOLDllVPN__218"
+      - "Telegram_GOLDllVPN__219"
+      - "Telegram_GOLDllVPN__220"
+      - "Telegram_GOLDllVPN__221"
+      - "Telegram_GOLDllVPN__222"
+      - "Telegram_GOLDllVPN__223"
+      - "Telegram_GOLDllVPN__224"
+      - "Telegram_GOLDllVPN__225"
+      - "Telegram_GOLDllVPN__226"
+      - "Telegram_GOLDllVPN__227"
+      - "Telegram_GOLDllVPN__228"
+      - "Telegram_GOLDllVPN__229"
+      - "Telegram_GOLDllVPN__230"
+      - "Telegram_GOLDllVPN__231"
+      - "Telegram_GOLDllVPN__232"
+      - "Telegram_GOLDllVPN__233"
+      - "Telegram_GOLDllVPN__234"
+      - "Telegram_GOLDllVPN__235"
+      - "Telegram_GOLDllVPN__236"
+      - "Telegram_GOLDllVPN__237"
+      - "Telegram_GOLDllVPN__238"
+      - "Telegram_GOLDllVPN__239"
+      - "Telegram_GOLDllVPN__240"
+      - "Telegram_GOLDllVPN__241"
+      - "Telegram_GOLDllVPN__242"
+      - "Telegram_GOLDllVPN__243"
+      - "Telegram_GOLDllVPN__244"
+      - "Telegram_GOLDllVPN__245"
+      - "Telegram_GOLDllVPN__246"
+      - "Telegram_GOLDllVPN__247"
+      - "Telegram_GOLDllVPN__248"
+      - "Telegram_GOLDllVPN__249"
+      - "Telegram_GOLDllVPN__250"
+      - "Telegram_GOLDllVPN__251"
+      - "Telegram_GOLDllVPN__252"
+      - "Telegram_GOLDllVPN__253"
+      - "Telegram_GOLDllVPN__254"
+      - "Telegram_GOLDllVPN__255"
+      - "Telegram_GOLDllVPN__256"
+      - "Telegram_GOLDllVPN__257"
+      - "Telegram_GOLDllVPN__258"
+      - "Telegram_GOLDllVPN__259"
+      - "Telegram_GOLDllVPN__260"
+      - "Telegram_GOLDllVPN__261"
+      - "Telegram_GOLDllVPN__262"
+      - "Telegram_GOLDllVPN__263"
+      - "Telegram_GOLDllVPN__264"
+      - "Telegram_GOLDllVPN__265"
+      - "Telegram_GOLDllVPN__266"
+      - "Telegram_GOLDllVPN__267"
+      - "Telegram_GOLDllVPN__268"
+      - "Telegram_GOLDllVPN__269"
+      - "Telegram_GOLDllVPN__270"
+      - "Telegram_GOLDllVPN__271"
+      - "Telegram_GOLDllVPN__272"
+      - "Telegram_GOLDllVPN__273"
+      - "Telegram_GOLDllVPN__274"
+      - "Telegram_GOLDllVPN__275"
+      - "Telegram_GOLDllVPN__276"
+      - "Telegram_GOLDllVPN__277"
+      - "Telegram_GOLDllVPN__278"
+      - "Telegram_GOLDllVPN__279"
+      - "Telegram_GOLDllVPN__280"
+      - "Telegram_GOLDllVPN__281"
+      - "Telegram_GOLDllVPN__282"
+      - "Telegram_GOLDllVPN__283"
+      - "Telegram_GOLDllVPN__284"
+      - "Telegram_GOLDllVPN__285"
+      - "Telegram_GOLDllVPN__286"
+      - "Telegram_GOLDllVPN__287"
+      - "Telegram_GOLDllVPN__288"
+      - "Telegram_GOLDllVPN__289"
+      - "Telegram_GOLDllVPN__290"
+      - "Telegram_GOLDllVPN__291"
+      - "Telegram_GOLDllVPN__292"
+      - "Telegram_GOLDllVPN__293"
+      - "Telegram_GOLDllVPN__294"
+      - "Telegram_GOLDllVPN__295"
+      - "Telegram_GOLDllVPN__296"
+      - "Telegram_GOLDllVPN__297"
+      - "Telegram_GOLDllVPN__298"
+      - "Telegram_GOLDllVPN__299"
+      - "Telegram_GOLDllVPN__300"
+      - "Telegram_GOLDllVPN__301"
+      - "Telegram_GOLDllVPN__302"
+      - "Telegram_GOLDllVPN__303"
+      - "Telegram_GOLDllVPN__304"
+      - "Telegram_GOLDllVPN__305"
+      - "Telegram_GOLDllVPN__306"
+      - "Telegram_GOLDllVPN__307"
+      - "Telegram_GOLDllVPN__308"
+      - "Telegram_GOLDllVPN__309"
+      - "Telegram_GOLDllVPN__310"
+      - "Telegram_GOLDllVPN__311"
+      - "Telegram_GOLDllVPN__312"
+      - "Telegram_GOLDllVPN__313"
+      - "Telegram_GOLDllVPN__314"
+      - "Telegram_GOLDllVPN__315"
+      - "Telegram_GOLDllVPN__316"
+      - "Telegram_GOLDllVPN__317"
+      - "Telegram_GOLDllVPN__318"
+      - "Telegram_GOLDllVPN__319"
+      - "Telegram_GOLDllVPN__320"
+      - "Telegram_GOLDllVPN__321"
+      - "Telegram_GOLDllVPN__322"
+      - "Telegram_GOLDllVPN__323"
+      - "Telegram_GOLDllVPN__324"
+      - "Telegram_GOLDllVPN__325"
+      - "Telegram_GOLDllVPN__326"
+      - "Telegram_GOLDllVPN__327"
+      - "Telegram_GOLDllVPN__328"
+      - "Telegram_GOLDllVPN__329"
+      - "Telegram_GOLDllVPN__330"
+      - "Telegram_GOLDllVPN__331"
+      - "Telegram_GOLDllVPN__332"
+      - "Telegram_GOLDllVPN__333"
+      - "Telegram_GOLDllVPN__334"
+      - "Telegram_GOLDllVPN__335"
+      - "Telegram_GOLDllVPN__336"
+      - "Telegram_GOLDllVPN__337"
+      - "Telegram_GOLDllVPN__338"
+      - "Telegram_GOLDllVPN__339"
+      - "Telegram_GOLDllVPN__340"
+      - "Telegram_GOLDllVPN__341"
+      - "Telegram_GOLDllVPN__342"
+      - "Telegram_GOLDllVPN__343"
+      - "Telegram_GOLDllVPN__344"
+      - "Telegram_GOLDllVPN__345"
+      - "Telegram_GOLDllVPN__346"
+      - "Blank_Vpn_لطفا_برای_حمایت_جوین_شید_2"
+      - "Blank_Vpn_لطفا_برای_حمایت_جوین_شید_3"
+      - "Blank_Vpn_لطفا_برای_حمایت_جوین_شید_4"
+      - "Server"
+      - "Provider3A20"
+      - "یامیام_پروکسی"
+      - "Server_1"
+      - "Server_2"
+      - "teldrgateway_1"
+      - "_V2RAYVlP"
+      - "-500GB-Join-Farsisports"
+      - "_TmeV2HUBIR_Join_Now__1"
+      - "_TmeV2HUBIR_Join_Now__2"
+      - "_TmeV2HUBIR_Join_Now__3"
+      - "_TmeV2HUBIR_Join_Now__4"
+      - "_TmeV2HUBIR_Join_Now__5"
+      - "_TmeV2HUBIR_Join_Now__6"
+      - "_TmeV2HUBIR_Join_Now__7"
+      - "_TmeV2HUBIR_Join_Now__8"
+      - "v2raymeli1"
+      - "v2raymeli1_1"
+      - "Telegram_e_terafkon"
+      - "Telegram_e_terafkon_1"
+      - "Telegram_e_terafkon_2"
+      - "Telegram_e_terafkon_3"
+      - "Telegram_e_terafkon_4"
+      - "Telegram_e_terafkon_5"
+      - "v2raymeli1_2"
+      - "v2raymeli1_3"
+      - "telegram_config7land_1"
+      - "confegraigan_نت_ملی_102"
+      - "confegraigan_نت_ملی_101"
+      - "v2raymeli1_4"
+      - "HajmVPN_Config_"
+      - "HajmVPN_Config__1"
+      - "JoinConfigV2rayy_کانفیگ_رایگان_2"
+      - "JoinConfigV2rayy_کانفیگ_رایگان_3"
+      - "JoinConfigV2rayy_کانفیگ_رایگان_4"
+      - "JoinConfigV2rayy_کانفیگ_رایگان_5"
+      - "JoinConfigV2rayy_کانفیگ_رایگان_6"
+      - "JoinConfigV2rayy_کانفیگ_رایگان_7"
+      - "JoinConfigV2rayy_کانفیگ_رایگان_8"
+      - "Channel"
+      - "_کانال_ما_V2ray_ARVIN0"
+      - "GhostVPNStore_جویین_بدهههه"
+      - "IranProxyPlus"
+      - "httpstmekanfek_v2_2"
+      - "Biavaslim20F09F8C9920"
+      - "Biavaslim"
+      - "Biavaslim_1"
+      - "Biavaslim_2"
+      - "Biavaslim_3"
+      - "Biavaslim_4"
+      - "Biavaslim_5"
+      - "Biavaslim_6"
+      - "teldrgateway_2"
+      - "teldrgateway_3"
+      - "rendvpn_4"
+      - "rendvpn_5"
+      - "rendvpn_6"
+      - "rendvpn_7"
+      - "rendvpn_8"
+      - "rendvpn_9"
+      - "rendvpn_10"
+      - "rendvpn_11"
+      - "rendvpn_12"
+      - "rendvpn_13"
+      - "rendvpn_14"
+      - "rendvpn_15"
+      - "rendvpn_16"
+      - "rendvpn_17"
+      - "rendvpn_18"
+      - "rendvpn_19"
+      - "rendvpn_20"
+      - "rendvpn_21"
+      - "rendvpn_22"
+      - "rendvpn_23"
+      - "teldrgateway_4"
+      - "SPARTAN_YT_قطع_شد_بیا_چنل_جدید_میزارم"
+      - "Server_3"
+      - "SPARTAN_YT_قطع_شد_بیا_چنل_جدید_میزارم_1"
+      - "_کانال_ما_V2ray_ARVIN0_1"
+      - "Farsisports"
+      - "Telegram_vpnv2ray_rayegan"
+      - "Telegram_vpnv2ray_rayegan_1"
+      - "Telegram_vpnv2ray_rayegan_2"
+      - "Telegram_vpnv2ray_rayegan_3"
+      - "JoinConfigV2rayy_کانفیگ_رایگان_9"
+      - "JoinConfigV2rayy_کانفیگ_رایگان_10"
+      - "JoinConfigV2rayy_کانفیگ_رایگان_11"
+      - "JoinConfigV2rayy_کانفیگ_رایگان_12"
+      - "JoinConfigV2rayy_کانفیگ_رایگان_13"
+      - "JoinConfigV2rayy_کانفیگ_رایگان_14"
+      - "JoinConfigV2rayy_کانفیگ_رایگان_15"
+      - "Telegram_vpnv2ray_rayegan_4"
+      - "Telegram_vpnv2ray_rayegan_5"
+      - "Telegram_vpnv2ray_rayegan_6"
+      - "Telegram_vpnv2ray_rayegan_7"
+      - "Telegram_vpnv2ray_rayegan_8"
+      - "Telegram_vpnv2ray_rayegan_9"
+      - "SPARTAN_YT_قطع_شد_بیا_چنل_جدید_میزارم_2"
+      - "Telegram_vpnv2ray_rayegan_10"
+      - "Telegram_vpnv2ray_rayegan_11"
+      - "Telegram_vpnv2ray_rayegan_12"
+      - "Telegram_vpnv2ray_rayegan_13"
+      - "Telegram_vpnv2ray_rayegan_14"
+      - "Telegram_vpnv2ray_rayegan_15"
+      - "_کانال_ما_V2ray_ARVIN0_2"
+      - "v2raymeli1_5"
+      - "v2raymeli1_6"
+      - "Telegram_GOLDllVPN__347"
+      - "Telegram_GOLDllVPN__348"
+      - "Telegram_GOLDllVPN__349"
+      - "Telegram_GOLDllVPN__350"
+      - "Telegram_GOLDllVPN__351"
+      - "Telegram_GOLDllVPN__352"
+      - "Telegram_GOLDllVPN__353"
+      - "_vpnbaz"
+      - "_vpnbaz_1"
+      - "_vpnbaz_2"
+      - "_vpnbaz_3"
+      - "_vpnbaz_4"
+      - "Telegram_e_terafkon_6"
+      - "_300_39TickV2bot"
+      - "Telegram_SOSkeyNET"
+      - "Telegram_SOSkeyNET_1"
+      - "_TmeV2HUBIR_Join_Now__9"
+      - "telegram_config7land_2"
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+  - name: "🎯 مستقیم"
+    type: "select"
+    proxies:
+      - "DIRECT"
+rules:
+  - "DOMAIN-SUFFIX,local,DIRECT"
+  - "IP-CIDR,127.0.0.0/8,DIRECT"
+  - "IP-CIDR,172.16.0.0/12,DIRECT"
+  - "IP-CIDR,192.168.0.0/16,DIRECT"
+  - "IP-CIDR,10.0.0.0/8,DIRECT"
+  - "DOMAIN-SUFFIX,ir,DIRECT"
+  - "DOMAIN-SUFFIX,digikala.com,DIRECT"
+  - "DOMAIN-KEYWORD,bank,DIRECT"
+  - "DOMAIN-SUFFIX,google.com,🚀 انتخاب پروکسی"
+  - "DOMAIN-SUFFIX,youtube.com,🚀 انتخاب پروکسی"
+  - "DOMAIN-SUFFIX,instagram.com,🚀 انتخاب پروکسی"
+  - "MATCH,🚀 انتخاب پروکسی"
